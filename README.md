@@ -10,3 +10,5 @@ cout<<"La suma de 5 + 5 es: <<5+5"
 Se ejecuata las lineas anteriores en una sola con la ayuda de la secuencia de escape barra invertida + n
 
 Se agrega secuencia de escape para tabular \t
+
+Para comentar un bloque de líneas utilza /* y cierra el bloque con */
