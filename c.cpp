@@ -11,5 +11,8 @@ int main()
     cout<<"a mi proyecto: CONOCIENDO C PLUS PLUS"<<endl;
 
     cout<<"La suma de 5 + 5 es: "<<5+5<<endl;
+    cout<<"La operacion de un promedio es: "<<(8+10+6)/3<<endl;
+
+    cout<<"Hola mundo!\nBIENVENIDOS \n A mi proyecto CONOCIENDO C PLUS PLUS \n";
     return 0;
 }
