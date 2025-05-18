@@ -6,7 +6,10 @@ using namespace std;
 
 int main()
 {
-    cout<<"Hola, mundo! ";
+    cout<<"Hola, mundo! "<<endl;
+    cout<<"BIENVENIDOS"<<endl;
+    cout<<"a mi proyecto: CONOCIENDO C PLUS PLUS"<<endl;
 
+    cout<<"La suma de 5 + 5 es: "<<5+5<<endl;
     return 0;
 }
