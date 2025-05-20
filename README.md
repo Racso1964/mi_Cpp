@@ -12,3 +12,12 @@ Se ejecuata las lineas anteriores en una sola con la ayuda de la secuencia de es
 Se agrega secuencia de escape para tabular \t
 
 Para comentar un bloque de líneas utilza /* y cierra el bloque con */
+
+
+TIPOS DE DATOS Y DIFERENCIAENTRE CADA UNO DE ELLOS EN C++:
+    -Datos Integrado (proporcionados por el compilador).
+    -Datos Tipo Clase (creados por el programador).
+
+    DATOS NUMÉRICO. (Entero y Punto Flotante)
+        Entero: Char(caracreres)    Bool(boleanos)    Int(enteros)
+        Flotante: Float     Double
