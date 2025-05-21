@@ -21,3 +21,15 @@ TIPOS DE DATOS Y DIFERENCIAENTRE CADA UNO DE ELLOS EN C++:
     DATOS NUMÉRICO. (Entero y Punto Flotante)
         Entero: Char(caracreres)    Bool(boleanos)    Int(enteros)
         Flotante: Float     Double
+
+    COMO ALMACENA LOS DATOS UNA COMPUTADURA:
+        BIT Es un dígito del Sistema de Numeració Binario y representa la unidad mínima de información. BIT ----> 0 Ó 1
+
+        Sí tubiera 5 BITs puedo aplicar una formula y calcular las combinacioes posibles:
+                            2^n donde "n" es la cantidd de BITs
+                            2^5 = 32 combinaciones entre (0 y 31)
+
+                            2^n-1 = Número Máximo = 31
+
+        BYTE = 8 BITs
+        2^8 = 256 combinaciones entre (0 y 255)
