@@ -33,3 +33,16 @@ TIPOS DE DATOS Y DIFERENCIAENTRE CADA UNO DE ELLOS EN C++:
 
         BYTE = 8 BITs
         2^8 = 256 combinaciones entre (0 y 255)
+
+
+    EN EL CASO DE TENER CINCO BITS IMPLICA 32 COMBINACIONES Y ME INDICA QUE PUEDO TRABAJAR CON NÚMEROS ENTRE CERO (0) Y (31)
+
+    _________________________
+     2^4 |2^3 | 2^2| 2^1| 2^0|
+      1  |  1 |  1 | 1  | 1  |
+
+    (2^4 *1)+(2^3*1)+(2^2*1)+(2^1*1)+(2^0*1)
+        16  +   8   +   4   +   2   +   1   = 31
+    
+    
+     
