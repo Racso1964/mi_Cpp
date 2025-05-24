@@ -150,6 +150,33 @@ Recordando que char almacena caracteres individuales en la localidad respectiva.
 
 Entonces, aún tecleando una palabra en realidad lo que sucede internamente es apartar el número de localidades según el número de símbolos o letras contenidas en el enunciado u operación realizada.
 
-Para el caso de "Hola", se reservan cuatro localidades de memoria de un BYTE cada una y no se almacena la letra o símbolo sino el número que corresponde a dicho dígito
+Para el caso de "Hola", se reservan cuatro localidades de memoria de un BYTE cada una y no se almacena la letra o símbolo sino el número que corresponde a dicho dígito.
+
+En caso que quisiera generar una cadena de caracteres y guardarse completa, es similar, se reservan 4 char  de memoria pero en vez de simbolos por separado como hasta ahora hemos visto se escribe la palabra completa entre comillas doble "Hola".
+
+Para ello existe una extensión o derivacion de Char que se llama STRING, de manera de poder colocar la palabra completa en lugar de caracteres separados.
+
+Entonces en lugar de 'H''o''l''a' escribo "Hola".
+
+Para poder diferenciar un caracter Char de una palabra String. El String va con comillas doble mientras Char con comillas simple.
+
+Entonces la combinacion de dato string ya existe dentro del compilador ya integrado
+
+Veamos Tipo de dato Bool.
+Bool = 1 Byte --->  verdadero  o  falso
+
+OPERADOR RELACIONAL      SIGNIFICADO         EJEMPLO.
+        <                menor que         edad < 30.
+        >                mayor que         altura > 6.2.
+        <=               menor o igual     gravable > 200.
+        >=               mayor o igual     temp >= 98.6.
+        ==               igual a           calificacion == 3.
+        !=               diferente         numero != 250            
+
+
+
+
+
+
 
 
