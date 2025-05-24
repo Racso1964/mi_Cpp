@@ -134,3 +134,22 @@ veamos un extrcto:
 
 Con la combinación Alt + 64 aparece el símbolo @
 Con la combinación Alt + 65 aparece el símbolo A
+
+El Código ASCII es importante para comprender que el computador entiende es de números sin importar si en un Char se está representando una letra o un símbolo en epecial. Entonces a la hora de almacenar en memoria la computadora lo guarda como un número del Sistema Decimal, de tal manera que aunque se teclee la letra mayúscula (A),este noguarda esa a mayuscula en memoria sino el número DEC que le corresponde en la tabla ASCII.
+
+De tal manera de entender que aunque el Char es para caracteres en realidad se clasifica como un tipo de dato numérico entero.
+
+Veamos qué pasa cuando se escrie "Hola".
+
+Recordando que char almacena caracteres individuales en la localidad respectiva.
+
+'H' = 72    La (H) mayúscula le corresponde 72.
+'o' = 111   La (o) minúscula le corresponde 111.
+'l' = 108   La (l) minúscula le corresponde 108.
+'a' = 97    La (a) minúscula le corresponde  97.
+
+Entonces, aún tecleando una palabra en realidad lo que sucede internamente es apartar el número de localidades según el número de símbolos o letras contenidas en el enunciado u operación realizada.
+
+Para el caso de "Hola", se reservan cuatro localidades de memoria de un BYTE cada una y no se almacena la letra o símbolo sino el número que corresponde a dicho dígito
+
+
