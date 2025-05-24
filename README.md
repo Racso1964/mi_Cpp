@@ -80,7 +80,25 @@ TIPOS DE DATOS Y DIFERENCIAENTRE CADA UNO DE ELLOS EN C++:
 
     Por esta razón lo primero que tenemos que tomar en cuenta es saer qué tipo de datos se está trabajando y  más o menos saber el rango de posible recorrido de esos valores para que así desde un principio sepamos cuanto espacio de almacenamiento vamos a necesitar.
 
-    Estos detalles son importante para así prevenir errores de lógica a medida que el programa va escalando
-    
-    
-     
+    Estos detalles son importante para así prevenir errores de lógica a medida que el programa va escalando.
+
+    Imaginemos la memoria RAM o Disco duro con el siguiente cuadro:
+    __________.
+    │        │.
+    __________
+    │        │Localidad de memoria de un Byte.
+    __________
+    │        │.
+    __________
+    │        │.
+
+Y cada localidad de memoria está seccionada con una capacidad de almacenamiento para un Byte (8 bits).
+
+Sabemos en la practica que podemos guardar cualquie número; pero en la memoria los espacios de localidades de almacenamiento estan configurados con una capacidad de un Byte.
+
+En caso de querer trabajar un número mucho más grande se debe decidir el tipo de dato a implementar y es donde entra a figurar el concepto de tipos de dato computacional ( CHAR, BOOL Y INT).
+
+Char. Reserva un Byte de localidad de memoria.
+Bool. Reserva un Byte de localidad de memoria.
+Int. Reserva cuatro Byte  de localidad de memoria.
+
