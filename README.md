@@ -69,7 +69,18 @@ TIPOS DE DATOS Y DIFERENCIAENTRE CADA UNO DE ELLOS EN C++:
     Tamaño  Combinaciones   Valor Mínimo    Valor Máximo
     1 BYTE   2^8=256            -128            127
     2 BYTE   2^16=65536         -32768          32767
-    4 BYTE   2^32=4294967296    -2147483648     2147483647            
+    4 BYTE   2^32=4294967296    -2147483648     2147483647     
+
+
+    ASÍ ES COMO ESTÁ ESTRUCTURADA LA MEMORIA INTERNA DE LA COMPUTADORA.
+
+    Con el análisis de esta tabla más o menos queda claro el porqué es importante entender cuál es el valor mínimo y máximo que podemos almacenar en un Byte. Hay que tener en cuenta que es importante saber de antemanocuál es el espacio de almacenamiento que se necesita deacuerdo al valor de los datos de trabajo. Sí el caso fuera el 100 obviamente que con 1 Byte alcanza porque en un Byte puede caber valores entre -128 a 127; pero si fuece el número 1000, yano cabe en un byte; se necesitaría dos Byte pués tienen un rango de -32768 a 32767 y porsupuesto aarca al número 1000.
+
+    Si fuese el caso de trabajar con el número 100 mil  y lo quiero sumar con        cien; el primero no cabe en 2 Byte, necesito 4 Byte.
+
+    Por esta razón lo primero que tenemos que tomar en cuenta es saer qué tipo de datos se está trabajando y  más o menos saber el rango de posible recorrido de esos valores para que así desde un principio sepamos cuanto espacio de almacenamiento vamos a necesitar.
+
+    Estos detalles son importante para así prevenir errores de lógica a medida que el programa va escalando
     
     
      
