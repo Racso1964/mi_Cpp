@@ -102,3 +102,35 @@ Char. Reserva un Byte de localidad de memoria.
 Bool. Reserva un Byte de localidad de memoria.
 Int. Reserva cuatro Byte  de localidad de memoria.
 
+CHAR almacena caracteres individuales.
+    -Mayúsculas y minúsculas.
+    -Números del cero al nueve.
+    -Símbolos especiales ($,#,-,!).
+    -Letras.
+
+No tanto para números pués para ello existe el tipo de dato Int, pero dentro delos caracteresque almacena abviamente hay una diferencia entre los que son caracteres en mayúsculas o minúscula; también puede almacenar números que van del cero al nueve al igual que cuales quiera de los simbolos del teclado y obviamente todas las letras mayusc. o minusc.
+
+Cuando se va a trabajar con un caracter, se 
+tiene que colocar entre comillas simple para poder diferenciarlo de un valor nuérico como: '1' como caracter y 1 como valor numérico.
+
+Sí se coloca un número entre cero y nueve dentro de comillas simple; el compilador va a entender que se está tomando como un caracter y no como un número.
+
+Ejemplo de caracrer q pueden alojarse en una localidad de memoria Char:
+'A', '3', '#', '$', 'b', ';' '-', 'Y'.
+
+Ya sabemos que el Char es de un BYTE.
+¿Cómo entender la tabla ASCII Code de 256 combinaciones?
+
+La tabla ASCII o código ASCII es un acrónimo que corresponde a la expresión inglesa American Standard Code for Information Interchange.
+
+Este código funciona como un enlace entre el lenguaje de máquina (código inario) y la forma empleada por los seres humanos para designar instrucciones o ingresar texto en un computador.
+
+La tabla ASCII ofrece todas las combinaciones posibles que pueden caber en una localidad de memoria "Char". Por ejemplo cualquier letra o símbolo del teclado tiene un valor numérico del Sistema Decimal, asignado a ese símbolo, letra o número.
+
+veamos un extrcto:
+        BYTE        Cod     Char
+        00100000    65      A
+        01000000    64      @
+
+Con la combinación Alt + 64 aparece el símbolo @
+Con la combinación Alt + 65 aparece el símbolo A
