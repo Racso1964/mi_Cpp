@@ -171,12 +171,113 @@ OPERADOR RELACIONAL      SIGNIFICADO         EJEMPLO.
         <=               menor o igual     gravable > 200.
         >=               mayor o igual     temp >= 98.6.
         ==               igual a           calificacion == 3.
-        !=               diferente         numero != 250            
+        !=               diferente         numero != 250
+
+Los datos tipo Bool ocupa tambien 1 Byte en memoria y tiene sólo dos combianciones posible True y False; tamien lo podemos tomar como si fuera un 1 o un cero (0).
+
+El tipo de dato Bool es usado cuando tenemos operaciones lógicas que es esl caso cuando tenemos una pregunta la cual acepta como respuesta un (si) o un (no) o puede ser un verdadero(v) o un falso (f) o (1) o (0).
+
+Datos tipo Int.
+Int = 4 BYTESs --> VALOR ENTERO NUÉRICO
+
+Un Int ocupa cuatro localidades de memoria, sabiendo que cada localidad vale un Byte.
+
+   DATO Int ---> |BYTE |BYTE |BYTE|BYTE|.
+   Allí se va a almacenar un valor entero numérico.
+
+Int = 4 BYTES ---> 2^32 = 4294967296 cobinaciones posible.
+Este número de combinaciones (cuatromil doscientas noventa y cuatro milones noveciento cesenta y siete mil doscientas noventayseis) se divide entre dos  y nos dá un rango con valores positivos y negativos:4 BYTE   2^32=4294967296    -2147483648     2147483647.
+
+Entonces en un entero vamos a poder guardar valores entre -2147483648 y +2147483647 incluyendo el cero.
+
+Una muy buena practica de programación y como método para optimizar el código del lenguajede programático es "RESERVAR ÚNICAMENTE EL ESPACIO DE MEMORIA QUE VAMOS A NECESITAR"
+
+Y para ello nos es de suma importancia conocer los tipos de datos o variantes que se derivan de INT:
+
+Short int           ocupa 2 BYTE.
+unsigne short in    Sin signo ocupa 2 BYTE.
+
+Int                 ocupa 4 BYTE.
+unsigne int         Sin signo ocupa 4 BYTE.
+
+Long int            ocupa 4 BYTE.
+Unsigne long int    Sin signo ocupa 4 BYTE.
 
 
+Uno de los más utilizados y conocidos es el Short int.
+Sí ya sabemos que el int ocupa 4 Byte, entonces el "sort int" va a ocupar dos Byte. Obviament tenemos las dos combinaciones; sí se trabaja con signo entonces lo queme de el número de combinaciones se tiene que dividir entre dos. Pero sí lo voy a trabajar sin signo, es decir, quiero utilizarlo todo en la parte positiva entonces eiste el "unsigne short in" La palabra "unsigne"nque significa sin signo. Entonces en véz de utilizar todo el rango para valores positivos y negativos; utilizaremos todo el rango para valores positivos incluyendo el cero que es neutro, pero sigo teniendo los dos espacios de los 2 BYTE.
+
+Respecto al "Int" ya sabemos que ocupa 4 Byte si se configura el dato como "Int" ya la computadora sabe que debe dividir entre dos y reservar una parte para valores positivos y la otra parte para valores negativos.
+
+Pero si no quiero signo tambien puedo anteponer la palabra "unsigned"y va a ir como "unsigned int" que sería un int sin signo.
+
+Ahora si quiero un número mucho más grande usaría la palabra"Long" que debería ser el doble de la capacidad de un "Int" pero enrealidad no es así continuaría con 4 Byts y el "Unsigne long int" sería sin signo.
+
+VEAMOS LA TABLA:
+_________________________________________________________
+NOMBRE DEL          TAMAÑO DEL.
+TIPO DE DATOS       ALMACENAMIENTO
+                    EN (Bytes)          RANGO DE VALORES .
+_________________________________________________________.
+Char                    1                       256      .
+Bool                    1                       1 - 0    .
+Short int               2                -32768 a +32767 .
+unsigne  Short int      2                  0 a 65535     .
+Int                     4            -2147483648 a +2147483647.
+Unsigned int            4                  0 a 4294967295 . 
+Long int                4             -2147483648 a +2147483647 .
+Unsigne long int        4                  0 a 4294967295 .
+
+El tema de la capasidad de memoria reservada para la localidad "Long Int" que debería ser 8 BYTEs y la realidad es 4 BYTEs se explica remontandonos a los antiguos compiladores un Int no tenía 4 Bytes,antes en los primeros compiladores un entero (Int) cubría dos Bytes y de allí nace el término "Long int" que ocupaba 4 Bytes que es el doble de este dos Bytes; pero ya con los compiadores modernos ya los compiladores reservan 4 Bytes para un Int. Así que el long int se quedó con el cuatrocomo era antes y el Int actual igual tiene 4 Bytes.Aclarando que etos valores pueden cambiar dependiendo del IDE que esté utilizando.
+
+Ya tenemos sistemas operativos de 32 Bytes y 64 Bytes: entonces por ejemplo en los sistemas operativos de 64 Bytes un "Long Int" ya ocupa 8 y hasta más Bytes.
+
+VALOR NUMÉRICO DECIMAL
+Datos Flotantes ejemplo: +10.625    5.  -6.2    0.0     0.33    +2.0 .
+
+-Float = 4 Bytes.
+-Double = 8 Bytes.
+-Long Double = 8 Bytes.
+
+En los valores nuéricos flotantes (valores decimales) se puede tener numeros negativos, cero, positivos y se suma el valor decimal. La diferencia es que en estos valores se denota el punto decimal.
+
+Entonces dentro de estos existe el tipo de dato Float, que es el original,y es de 4 Bytes.
+
+Cuando necesitamos un resultado  con mayor cantidad de decimales entonces podemos usar un tipo de dato "Double" que como su nombre lo indica es el doble del Float; si antes era  4 Bytes, con Float será 8 Bytes.
+
+Siguiendo la lógica existe el "Long Double" de 8 Bytes pero en otra IDE u otro compilador pudiera tener más de ocho Bytes.
+
+VEAMOS EN QUÉ AFECTA TENER CUATRO U OCHO BYTES PARA DATOS FLOTANTE.
 
 
+TIPO    ALMACENAMIENTO      RANGO ABSOLUTO DE VALORES (+ y -).
+____________________________________________________.
+Float        4 Bytes         1.40129846432481707e-45.
+.                           a.
+.                           3.40282346638528860e+38.
+____________________________________________________.
+Double y.
+long double   8 Bytes.
+.                           a.
+.                           1.79769313486231570e+308.
+____________________________________________________.
 
+Esto va a afectar directamente a la precisión del dato osea la cantidad de decimales que se pueden presentar después del punto.
 
+Por ejemplo un tipo de dato "Float" ocupa 4 Bytes de almacenamiento en memoria y se va a poder representar valores hasta menos 45 decimales o hasta más de 38 decimales para valores positivos.
 
+Y por ejemplo con un "double" y "long double" la presiciòn es exponencial hasta -324 y eponencial +308.
 
+Entonces cuando tenemos una operación que esté creciendo eponencialmente puede que en algún momento digamos que ya un float no nos es suficiente por la cantidad de decimales que estamos generando; entonces aquí es donde se justifica el empleo de una variable tipo "double".
+
+Si tenemos dda de cuanto espacio ocupa los tipos de datos del compilador que se está ocupando, podemos escribir una instrucción en el programa que estemos utilizando.
+
+cout<<"El tamaño de un char es: "<<sizeof(char)<<endl;>>.
+cout<<"El tamaño de un bool es: "<<sizeof(bool)<<endl;>>.
+cout<<"El tamaño de un short int es: "<<sizeof(short int)<<endl;>>.
+cout<<"El tamaño de un int es: "<<sizeof(int)<<endl;>>.
+cout<<"El tamaño de un long int es: "<<sizeof(long int)<<endl;>>.
+cout<<"El tamaño de un float es: "<<sizeof(float)<<endl;>>.
+cout<<"El tamaño de un double es: "<<sizeof(double)<<endl;>>.
+
+Esto nos va a decir directamente cual es el tamaño de espacio en  memoria que ocupa este tipo de dato. De esta manera nos podemos asegurar; pués hay algunos IDE que tienen un "long int" de 8 mientras otros tienen uno de 4.
