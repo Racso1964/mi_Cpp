@@ -1,0 +1,15 @@
+EN ESTE ARCHIVO TRATAREMOS CONCEPTOS Y DEFINICIONES REFERIDAS A 
+OPERACIONES ARITMÉTICA Y REGLAS DE TIPO DE DATOS EN C++
+
+┌─────────────────────────┬───────────────────────────┐          
+│Tipos de dato            │ Operaciones.              │
+├─────────────────────────┼───────────────────────────┤          
+│  Numeros enteros        │  +, -, *, /               │            
+│                         │  %, =, ==, !=             │
+│                         │  <=, >=, vsizeof(),       │
+│                         │  y operaciones con bits   │
+├─────────────────────────┼───────────────────────────┤      
+│ Numeros de              │  +, -, *, /               │
+│ Punto Flotante          │  %, =, ==, !=             │
+│                         │  <=, >=, sizeof()         │
+└─────────────────────────┴───────────────────────────┘
