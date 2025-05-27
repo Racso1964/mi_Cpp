@@ -17,6 +17,7 @@ int main()
 
     cout<<"El tamaño de un char es: "<<sizeof(char)<<endl;
     cout<<"El tamaño de un bool es: "<<sizeof(bool)<<endl;
+    cout<<"El tamaño de un short int es: "<<sizeof(short int)<<endl;
      
     return 0;
 }
