@@ -21,6 +21,6 @@ int main()
     cout<<"El tamaño de un int es: "<<sizeof(int)<<endl;
     cout<<"El tamaño de un long int es: "<<sizeof(long int)<<endl;
     cout<<"El tamaño de un float es: "<<sizeof(float)<<endl;
-     
+    cout<<"El tamaño de un double es: "<<sizeof(double)<<endl;
     return 0;
 }
