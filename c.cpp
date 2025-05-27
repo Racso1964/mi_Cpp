@@ -16,6 +16,7 @@ int main()
     */cout<<"Hola mundo!\nBIENVENIDOS \n A mi proyecto CONOCIENDO C PLUS PLUS\n\t\t\t    con RACSO"<<endl;
 
     cout<<"El tamaño de un char es: "<<sizeof(char)<<endl;
+    cout<<"El tamaño de un bool es: "<<sizeof(bool)<<endl;
      
     return 0;
 }
