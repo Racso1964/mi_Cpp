@@ -13,3 +13,25 @@ OPERACIONES ARITMÉTICA Y REGLAS DE TIPO DE DATOS EN C++
 │ Punto Flotante          │  %, =, ==, !=             │
 │                         │  <=, >=, sizeof()         │
 └─────────────────────────┴───────────────────────────┘
+
+Dependiendo el tipo de dato se hace la reservación de espacio em memoria, pues no se debe reservar espacio que no se va a utilizar.
+Por ejemplo con números entero se puede hacer operaciones aritméticas como: suma, resta, multiplicación, división, módulo y operaciones lógicas como comparaciones de igualdad, de desigualdad,mayor que, menor que, etc.
+Con los números de punto decimal se puede sumar, restar, multiplicar, dividir y operaciones de comparación.
+
+Para poder hacer una operación se aplica la formula: VALOR_LITERAL  OPERADOR VALOR_LITERAL.
+ejemplo                                                   5             +           5.
+
+┌────────────────────────────────────────────────────┐          
+│     VALOR_LITERAL  OPERADOR VALOR_LITERAL          │
+├────────────────────────────────────────────────────┤          
+│    OPERACIÓN                OPERADOR               │            
+│   Adición                     +                    │
+│   Sustracción                 -                    │
+│   multiplicación              *                    │
+│   división                    /                    │
+│   División de módulo          %                    │
+│   multiplicación              *                    │
+├────────────────────────────────────────────────────┤
+
+
+
