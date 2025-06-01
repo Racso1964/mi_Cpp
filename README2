@@ -16,7 +16,7 @@ OPERACIONES ARITMÉTICA Y REGLAS DE TIPO DE DATOS EN C++
 
 Dependiendo el tipo de dato se hace la reservación de espacio em memoria, pues no se debe reservar espacio que no se va a utilizar.
 Por ejemplo con números entero se puede hacer operaciones aritméticas como: suma, resta, multiplicación, división, módulo y operaciones lógicas como comparaciones de igualdad, de desigualdad,mayor que, menor que, etc.
-Con los números de punto decimal se puede sumar, restar, multiplicar, dividir y operaciones de comparación.
+Con los números de punto decimal se puede sumar, restar, multiplicar, dividir y operaciones de comparación no aplica módulo.
 
 Para poder hacer una operación se aplica la formula: VALOR_LITERAL  OPERADOR VALOR_LITERAL.
 ejemplo                                                   5             +           5.
@@ -32,6 +32,62 @@ ejemplo                                                   5             +       
 │   División de módulo          %                    │
 │   multiplicación              *                    │
 ├────────────────────────────────────────────────────┤
+
+la diagonal (/) representa división mientras que (%) este módulo representa residuo. De tal manera q la diagonal va a representar el cociente de una división.
+Y el (%) va a representar lo que sobró de haber realizado la división.
+
+Digamos que queremos dividi 10 entre 4.
+Esperaríamos nos de un resultado de 2.5.
+Y sin embargo el compilador no lo va a entender así.
+La computadora va a entender que estamos queriendo saber cuantas veces cabe el 4 en un 10.
+por lo tanto si ponemos 10 / 4 el resultado va a ser un 2 únicamente aunque esperemos un resultado con decimal.
+Pero si colocamos 10 % 4 (Diez módulo 4) es donde me va a dar el otro 2 el cual es el que sobra.
+Es importante la asimilación de este concepto, pués a ceces nos interesa no conocer el cociente o resultado de la división pero si nos interesa saber cuanto sobró endicha división.
+Para eso son esos dos operadores.
+
+Otra de las reglas básicas es:
+-Sí en una división tanto el dividendo como el divisor son enteros el resultado vaa ser entero.
+-Sí fuece una operación en donde uno de los operando no es un entero pero si un decimal.
+    entonces el resultado va a ser de presición doble ("double")o resultado decimal. Esto es claro entenderlo en operacones de suma, resta, división y multiplicación.
+    pero donde suele haber más confusión al  principio es en la división, pues dividir dos enteros resuelveotro entero.
+-Síqueremos un resultado con decimal, entonces uno de los dos valores o ambos tiene que ser un flotante (número decimal).
+
+El cuadro siguiente resume el concepto:
+
+┌──────────┬────────┬───────┬────────────────┬─────────┐
+│Operación │operador│  tipo │ Operando       │Presición│       
+├──────────┼────────┼───────┼────────────────┼─────────┤          
+│Adición   │   +    │Binario│Ambos son entero│Entero   │
+│          │        │       │Un operador no  │Presición│
+│          │        │       │es entero       │doble    │
+├──────────┼────────┼───────┼────────────────┼─────────┤  
+├──────────┼────────┼───────┼────────────────┼─────────┤          
+│Sustracc  │   -    │Binario│Ambos son entero│Entero   │
+│          │        │       │Un operador no  │Presición│
+│          │        │       │es entero       │doble    │
+├──────────┼────────┼───────┼────────────────┼─────────┤  
+│Multiplic │   *    │Binario│Ambos son entero│Entero   │
+│          │        │       │Un operador no  │Presición│
+│          │        │       │es entero       │doble    │
+├──────────┼────────┼───────┼────────────────┼─────────┤ 
+│Divición  │   /    │Binario│Ambos son entero│Entero   │
+│          │        │       │Un operador no  │Presición│
+│          │        │       │es entero       │doble    │
+├──────────┼────────┼───────┼────────────────┼─────────┤ 
+│Módulo    │   %    │Binario│Ambos son entero│Entero   │
+│          │        │       │Un operador no  │Presición│
+│          │        │       │es entero       │doble    │
+├──────────┼────────┼───────┼────────────────┼─────────┤
+│Negación  │!=      │Unitrio│Entero o doble  │igual op.│
+└──────────┴────────┴───────┴────────────────┴─────────┘
+
+
+
+
+
+
+
+
 
 
 
