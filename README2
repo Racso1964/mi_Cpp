@@ -81,6 +81,36 @@ El cuadro siguiente resume el concepto:
 │Negación  │!=      │Unitrio│Entero o doble  │igual op.│
 └──────────┴────────┴───────┴────────────────┴─────────┘
 
+Como ejemplo podemos codificar:
+cout<<"La división de 10 / 4 es:<<10/4<<endl;"
+Esto da 2 como resultado entendiendo el computador que 4 entra dos veces en 10, de allí el resultado 2.
+cout<<"El residuo de 10 / 4 es:<<10%4<<endl;"
+Tambien es 2 el resultado pero referido al módulo o residuo de la divisió de 10 entre dos.
+
+De la misma manera:
+cout<<"La división de 20 / 3 es:<<20/3<<endl;" Resultado 6.
+cout<<"El residuo de 20 / 3 es:<<20%3<<endl;" Resultado 2.
+Porque 20 entre tres es 6 y sobran 2 como residuo.
+
+Esto es importante asimilarlo cuando estamos haciendo operaciones aritméticas, porque si quisieramos sacar un tercio.
+cout<<"La división de 1 / 3 es:<<1/3<<endl;" Resultado 0.
+Entendiendo el procesador que el número 3 entra cero veces en el número 1.
+En véz del resultado esperado 0,3.
+
+Este cero puede causar muchisimos inconvenientes más adelante porque se esperaba como resultado un decimal y me dio fué cero.
+
+Por lo tanto para obtener el resultado decimal debo hacer que uno de los dos operando sea flotante o ambos.
+cout<<"La división de 1 / 3 es:<<1.0 / 3<<endl;" Resultado 0.33.
+cout<<"La división de 20 / 3 es:<<20/3.0<<endl;" Resultado 6.66
+
+REGLAS DE ESCRITURA DE OPERACIONES:
+-No se debe colocar dos operadores aritméticos uno al lado del otro.
+-Se pueden usar parentesis para agrupamientos. Todas las expresiones.
+ dentro de parentesis se evaúan primero.
+
+
+
+
 
 
 
