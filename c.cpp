@@ -13,7 +13,7 @@ int main()
     cout<<"La suma de 5 + 5 es: "<<5+5<<endl;
     cout<<"La operacion de un promedio es: "<<(8+10+6)/3<<endl;
 
-    */cout<<"Hola mundo!\nBIENVENIDOS \n A mi proyecto CONOCIENDO C PLUS PLUS\n\t\t\t    con RACSO"<<endl;
+    cout<<"Hola mundo!\nBIENVENIDOS \n A mi proyecto CONOCIENDO C PLUS PLUS\n\t\t\t    con RACSO"<<endl;
 
     cout<<"El tamaño de un char es: "<<sizeof(char)<<endl;
     cout<<"El tamaño de un bool es: "<<sizeof(bool)<<endl;
@@ -23,7 +23,13 @@ int main()
     cout<<"El tamaño de un float es: "<<sizeof(float)<<endl;
     cout<<"El tamaño de un double es: "<<sizeof(double)<<endl;
 
-    cout<<"La división de 10 / 4 es:"<<10/4<<endl;
+    */cout<<"La división de 10 / 4 es:"<<10/4<<endl;
     cout<<"El residuo de 10 / 4 es:"<<10%4<<endl;
+
+    cout<<"El resultado de 20/3.0*2 es: "<<20/3.0*2<<endl;
+    cout<<"El resultado de 20%3+10 es: "<<20%3+10<<endl;
+    cout<<"El resultado de 20-1.0/3 es: "<<20-1.0/3<<endl;
+    cout<<"El resultado de 20/(3.0*2) es:"<<20/(3.0*2)<<endl;
+
     return 0;
 }

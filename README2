@@ -107,6 +107,71 @@ REGLAS DE ESCRITURA DE OPERACIONES:
 -No se debe colocar dos operadores aritméticos uno al lado del otro.
 -Se pueden usar parentesis para agrupamientos. Todas las expresiones.
  dentro de parentesis se evaúan primero.
+-Se puede utilizar conjunto de parentesis dentro de otro. Los parentesis interioores son evaluados primero.
+-No se puede utilizar parentesis para expresar multiplicación. Siempre se debe utilizar el operador de multiplicación.
+
+Al igualque en matemáticas, la computadora sigue las reglas de asociatividad y jerarquía de operaciones.
+La Multiplicacion Division y Residuo tienen jerarquia frente a una Adicion o sustraccion.
+Siempre van a tener pioridad sobre las sumas y las restas.
+Pero que pasa si en un ejercicio tengo varias operaciones del mismo nive?.
+En esos casos por Asociatividad se resolveria de izquierda a derecha.
+No pasa nada si tenemos una multiplicacion y una resta. Obviamente se lleva primero el producto y luego la sustraccion.
+Veamos un caso donde tengo tres operaciones de la misma jerarquia en la misma operacion.
+
+8+5*7%2*4=.
+ 8+35%2*4=.
+  8+1*4=.
+   8+4=12.
+
+Fijemonos que tenemos Multipic, Modulo y Multiplic.
+Como los tres son de la misma jerarquia entonces comenzamos de izquierda a derecha.
+Ignorando el ocho y el signo de Adicion porque ellos tienen por prioridad el ultimo nivel.
+
+Otro caso.
+cout<<"El resultado de 20/3.0*2 es: <<20/3.0*2<<endl;"
+cout<<"El resultado de 20%3+10 es: <<20%3+10<<endl;"
+cout<<"El resultado de 20-1.0/3 es: <<20-1.0/3<<endl;"
+
+Da como resultados:
+13.33.
+12.
+19.667.
+
+Veamos la misma operacion modificandola.
+cout<<"El resultado de 20/3.0*2 es: <<20/3.0*2<<endl;"
+cout<<"El resultado de 20/(3.0*2) es: <<20/(3.0*2)<<endl;"
+Da como resultados:
+13.33.
+3.33.
+
+VARIABLES:
+Cuando se trata de variable incluye dos partes:
+-Declaracion de la variable (Reservar un espacio en la memoria).Este espacio va a depender del tipo de dato que se este trabajando.
+
+Short int ocupa dos localidades de memoria de 1 Byte cadauna.
+Un Int ocupa 4 localidades de memoria de 1 Byte cadauna.
+
+Hay que resaltar que aunque estamos acostumbrados a trabajar con numeros y con valores.
+En realidad no sabe nada de esos numeros o valores.
+La computadora unicamente sabe de direcciones de memoria.
+
+Recordando que la memoria esta estructurada por localidades de memoria de un Byte y a su vez cada localidad de memoria tiene un umero asignado.
+
+almacenamiento         almacenamiento     
+para un entero         para un entero  
+┌──────────┬         ┬───────┬
+│    45    │         │   12  │
+└──────────┴         ┴───────┴
+   1652                2548
+direccion            direccion
+de memoria           de memoria
+
+
+
+
+
+
+
 
 
 
