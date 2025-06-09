@@ -153,9 +153,9 @@ Un Int ocupa 4 localidades de memoria de 1 Byte cadauna.
 
 Hay que resaltar que aunque estamos acostumbrados a trabajar con numeros y con valores.
 En realidad no sabe nada de esos numeros o valores.
-La computadora unicamente sabe de direcciones de memoria.
+La computadora unicamente sabe de direcciones en memoria.
 
-Recordando que la memoria esta estructurada por localidades de memoria de un Byte y a su vez cada localidad de memoria tiene un umero asignado.
+Recordando que la memoria esta estructurada por posiciones y estas  posiciones tienen cierta numeracion.
 
 almacenamiento         almacenamiento     
 para un entero         para un entero  
@@ -165,6 +165,103 @@ para un entero         para un entero
    1652                2548
 direccion            direccion
 de memoria           de memoria
+
+Entoces cuando por ejemplo,se le dice a la computadora quiero almacenar el numero 45, la computadora
+no sabe que es el 45 ni que signiica ese 45 para el operador.
+La computadora unicamente sabe que es ub valor entero lo que se va a almacenar entonces lo unico que
+sabe es que va a tener que reservar cuatro Byte de memoria y ademastiene que guardar en algun lado la direccion en donde se guardaron esos 4 Byte que estan reservados
+para que alli se ponga el numero 45.
+
+Si por ejemplo se quiere almacenar el numero 12, nuevamente la computadora no sabe la intencion del operador de guardar un doce alli, lo unico que sabe
+es que se le dijo que se quiere almacenar unumero entero.
+
+Al ser un numero entero o de tipo "Int" entonces va y reserva 4 Byte enmemoria y va a almacenar la direccion
+ en ddonde quedaronreservadas o apartadas esas localidades de manera tal que por ejemplo
+ internamente lo que ocurre en el procesador es que lo que para el operador es un 45 para la computadora es una direccion 1652
+y lo que para el humano es un 12 para el procesador dice que ese es un valor que esta almacenado en la direccion 2548.
+
+Entonces es importante que entendamos que ocurre debajo de... para que asi podamos evitar algunos errores mas adelante.
+
+  num 1           num 2        TOTAL
+┌────────┬      ┬───────┬    ┬───────┬     
+│    45  │      │   12  │    │   57  │
+└────────┴      ┴───────┴    ┴───────┴ 
+   1652            2548         3000
+
+
+
+Cuando se hace una operacion aritmetica: TOTAL= num 1 + num 2 y su resultado.
+lo voy a llamar TOTAL pues le estamos poniendo una etiqueta o identificadores.
+o  nombre nombres a esos valores, que es lo que normalmente hacemos en.
+las operaciones comunes. En contraste, lo que hace el procesador es decir OK
+El valor que esta almacenado en la direccion 1652 de la memoria, se va a sumar
+con elvalor que esta almacenado en la direccion 2548 y el resultado de esa operacion.
+se va a almacenar en en la direccion 3000.
+
+
+VARIABLES: Declaracion y Reglas de declaracion.
+-El nombre de la variable debe comenzar con una letra o subrayado(_).
+ y solo puede contener letras, subrayados o digitos. No puede contener.
+ ningun espacio en blanco comas o simbolos especiales como () &  ,  $  #  .  !  \  ?.
+-Un nombre de variable no puede ser una palabra clave.
+-El nombre de la variale no puede consistir de mas de 1024 caracteres.
+
+
+Forma de declarar una variable.
+Declarar la variable unicamente consiste en apartar el espacio en memoria porque mas adelante se va a.
+almacenar un dato en dicha localidad.
+
+Aunque de principio no se sepa que dato se va a almecenar, lo que se quiere es apartar ese espacio  y identificarlo.
+con un nombre para mas adelante sea mas facil identificarlo.
+
+Por lo tanto para declarar la variable tenemos que decir primero que tipode dato voy a declarar en ese espacio, un espacio y a continuacion el nombre que sele va a poner siguiendo obviamente las tres reglas ya mencionads arriba.
+Ejemplos:
+
+int total;
+float promedio;
+char letra;
+double calificacion;
+long int fecha;
+string nombre;
+
+Alli tenemos variaas formas de declaracion, cuando leemos una de esas lineas todavia no hemos colocado el valor que ocupara dicho espacio de memoria.
+Lo unico que hemos hecho es aoartar un espacio para guardar un tipo de dato deacuerdo al tipo nombrado y la etiqueta q se la va a poner a ese espacio.
+Es la palabra que sigue al espacio luego del tipo.
+
+Recordando que todas las lineas deben llevar el punto y coma para indicar el final de la instruccion.
+
+Hasta este momento no hemos dicho que valor se alojara en dicho espacio de memoria apartado.
+
+Veamos una configuracion de VARIABLE. (int total;)
+
+
+int indica al procesador que reserve suficiente espacio para un numero
+entero.
+
+┌─────────────── ┐     
+│ ߛ   ߛ  ߛ  ߛ  │        
+├────────────────┤
+
+total indica que etiquete el primer Byte de almacenamiento reservados
+con el nombre "total".
+
+Cuando estamos trabajando lo unico que se hace a la hora de declarar una variable es que cuando el compilador lee a primera palabra
+que dice "int", pues lo que hace es reservar memoria para un tipo de dato "int."
+
+Ya sabemos que un int ocupa 4 Byte entonces busca en toda la memoriaun lugar donde halla 4 localidades libres que no esten siendo utilizadas y las va a reservar.
+
+Cuando lee el nobre que en este caso es "total", entonces le dice a la computadora que le ponga esa etiqueta a ese primer Byte, de los 4 que ya aparto.
+
+Y ENTONCES CUANDO QUERAOS UTILIZAR ese nombre "total", no tenemos que decirle la direccion de memoria, sino con decirle el nombre con eso ya el compilador y la computadora ya sabe a que valor nos estamos refiriendo.
+
+DECLARACION DE VARIAS VARIABLES DEL MISMO TIPO.
+Para estos casos (double calif1, calif2, calif3, promedio;).
+
+Entoces se puede hacer una declaracion multiple como se indica linea arriba.
+
+Hagamos el programa "c_v.pp".
+donde declararemos una variable tipo int con la etiqueta "x" int x,int y,char letra,float promedio
+Como son de diferente tipo tengo que haceruna declaracion por separado para cada una de ellas.
 
 
 
