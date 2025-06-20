@@ -298,6 +298,14 @@ Y esa asignacion va entre comillas doble.A diferencia de la variable.
 char q solo guarda una letre y se asigna con comilla simple: letra='a'.
 
 COMBINA TEXTO CO VARIABLE
+cout<<"El alumno"<<nombre<< "tiene un promedio final de: "<<promedio<<endl;
+
+ASIGNACION DE VALOR EN VARIABLE
+
+┌─────────────────────────┬───────────────────────────┐          
+│  INSTRUCCION            │ valor de suma             │
+├─────────────────────────┼───────────────────────────┤          
+│  suma = 0               │          0                │
 
 
 
