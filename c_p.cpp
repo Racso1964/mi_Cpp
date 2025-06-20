@@ -35,6 +35,8 @@ int main()
 
     //VARIABLE DE CONTEO
     cout<<"El valor de contador es: "<<contador<<endl;
+    contador++;//SE INCREMENTA EN 1 EL VALOR DE LA VARIABLE
+    cout<<"El valor de contador es "<<contador<<endl;
 
 
 
