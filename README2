@@ -319,6 +319,45 @@ cantidad hay asignada previamente alli, en esta caso hay un cero, este valor
 cero lo va a sumar con el nuevo valor asignado "96" y ese resultado lo va A
 almacenar alli mismo en suma, porlotanto suma cambio de valor.
 
+Esto tambien se le conoce como una variable de acumulacion proque mas que sumar
+aotras variables esta sumandose sobre si misma. Porlotanto podemos abreviar
+estas operaciones con estas combinaciones: +=  -=  *=  /=  %=.
+
++= Cuando tengamos una combinacion +=  significa que vamos a acumular sobre la misma variable.
+Es decir lo que hace esta combiancio es que el compilador toma el valor que tiene una variable y a esa misma variable le suma el el nuevo valor que le coloquemos al lado derecho de dicha combinacion +=
+
+-= Cuando tenemos un    -=  en lugarde acumular a esa variable lo que haria es decrementarlo: lo que tenia esa variable, si antes tenia un 96 y al lado derecho a la combinacion -=  se coloca 96 entonces la variable quedara en cero.
+
+Hacemos lo mismo con una multiplicacion *=  una division /0 o un residuo %=
+
+Basicamente siempre que encontremos alguna de esas combinaciones el compilador sabe que se va a hacer la operacion sobre esa misma variable.
+
+Esto tambien nos sirve par las famosas variables de conteo:
+
+VARIABLE DE CONTEO.
+"variable = variable + numero fijo"
+
+Se usa bien para sumar, restar, multiplicar dividir etc.
+
+┌─────────────────────────┬───────────────────────────┐          
+│    EXPRESION            │   ALTERNATIVA             │
+├─────────────────────────┼───────────────────────────┤          
+│  i = i + 1              │   i++ O  ++i              │
+├─────────────────────────┼───────────────────────────┤          
+│  n = n + 1              │   n++  O  --n             │
+├─────────────────────────┼───────────────────────────┤          
+│  j = j + 2              │   _____________           │
+├─────────────────────────┼───────────────────────────┤          
+│  k = k - 1              │   k--  O  --k             │
+├─────────────────────────┼───────────────────────────┤          
+│contador = contador + 1  │contador--  O  --contador  │
+└─────────────────────────┴───────────────────────────┘
+
+Hay que destacar que las alternativas del tipo j++  o i-- funcionan cuando el valor fijo es 1.
+
+De aqui sale un tipo especial de variales que son conocidas commo variablaes acumulativas o vaariables de conteo
+
+En el codigo c_p.cpp declararemos una variable de control llamada "contador" como va a ser un valor pequeño no necesito declararla tipo int, usaremos para estecaso short int que es mas que suficiente. 
 
 
 
