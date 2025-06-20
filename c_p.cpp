@@ -24,9 +24,13 @@ int main()
     //ASIGNAR VALOR A VARIABLE FLOTANTE
     calificacion1=8.5;
     calificacion2=9.2;//VISUALIAR VALOR DE VARIABLE
+    promedio=(calificacion1+calificacion2)/2;
+
     nombre = "Oscar";
     cout<<"El valor asignado a calificacion1 es: "<<calificacion1<<endl;
     cout<<"El valor asignado a calificacion2 es: "<<calificacion2<<endl;
+    cout<<"El promedio final es "<<promedio<<endl;
+    cout<<"El alumno "<<nombre<<"tiene una calificación de: "<<promedio<<endl;
 
 
 
