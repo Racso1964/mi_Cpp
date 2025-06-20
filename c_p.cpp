@@ -30,7 +30,7 @@ int main()
     cout<<"El valor asignado a calificacion1 es: "<<calificacion1<<endl;
     cout<<"El valor asignado a calificacion2 es: "<<calificacion2<<endl;
     cout<<"El promedio final es "<<promedio<<endl;
-    cout<<"El alumno "<<nombre<<"tiene una calificación de: "<<promedio<<endl;
+    cout<<"El alumno "<<nombre<<" tiene una calificación de: "<<promedio<<endl;
 
 
 
