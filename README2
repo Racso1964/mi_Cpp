@@ -306,6 +306,21 @@ ASIGNACION DE VALOR EN VARIABLE
 │  INSTRUCCION            │ valor de suma             │
 ├─────────────────────────┼───────────────────────────┤          
 │  suma = 0               │          0                │
+├─────────────────────────┼───────────────────────────┤          
+│  suma = suma + 96       │          96               │
+└─────────────────────────┴───────────────────────────┘
+
+Para complementar el tema tenemos un cuadro donde la variable suma se inicializa
+con valor cero y seguido otra instruccion "suma = suma + 96".
+¿QUE ES LO QUE HACE INTERNAMENTE EL COMPLILADOR?.
+Recordando que elcompilador resuelve primero el lado derecho de la igualdad
+"suma = suma + 96", luego va al espacio de memoriaasignado a "suma" y lee que
+cantidad hay asignada previamente alli, en esta caso hay un cero, este valor
+cero lo va a sumar con el nuevo valor asignado "96" y ese resultado lo va A
+almacenar alli mismo en suma, porlotanto suma cambio de valor.
+
+
+
 
 
 
