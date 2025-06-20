@@ -263,6 +263,47 @@ Hagamos el programa "c_v.pp".
 donde declararemos una variable tipo int con la etiqueta "x" int x,int y,char letra,float promedio
 Como son de diferente tipo tengo que haceruna declaracion por separado para cada una de ellas.
 
+Que pasa si una variable declarada "char" le asisgnamos un valor numerico.
+Aunque se supone que un char acepta unicamente caracteres dentro de comillas simple.
+si le asignamos un valor numerico y corremos el programa vemos que no marca error alguno.
+Sin embargo a la hora de imprimir no imprime el valor numerico sino la letra "F".
+Eso quiere decir que al declarar una variable tipo "char" va a almacenar el valor numerico introducido alli.
+Mas a la hora de mostrar, el compilador hace la interpretacion y muestra la letra o simbolo ASCII que le corresponde a ese numero asignado a la variable tipo "char".
+Pero en realidad es un numero lo que se almacena en esa localidad de memoria.
+
+Por ese motivo cuando en un char almaceno un 70 no pasa nada, no hay error.
+solamente q cuando se va a mostrar muestra el simbolo ASCII correspondiente a ese numero.
+
+Que pasaria si se olvida que "x" e "y" fueron declaradas variables entera, y se nos ocurre decir que (x= 8.5) y  (y=9.3).
+El programa no va a marcar error,al guardar valores decimales en una variable tipo numerica.
+
+Lo que si pasaria es que a la hora de imprimir no mostrara la parte decimal.
+
+OPERACIONES ARITMETICAS Y ASIGNACION DE RESULTADO EN UNA VARIABLE.
+En matematica da lo mismo x=2 o 2=x, en lenguaje C no es asi.
+
+En programacion en el lado izquierdo tiene que ir la variable y a la derecha el valor que se va a guardar alli.
+Tambien se puede hacer la declaracion y asignacion de una variable en una sola instruccion.
+ejemplo: double total=10.
+
+Se declara "total" de tipo "double" y se le asigna el 10.
+
+Aunque este declarado como "double" no pasa nada si le doy un valor entero.
+El compilador automaticamente le va a colocar el (10.0).
+
+
+La variable tipo string me guarda una palabra completa ejemplo.
+nombre = "Oscar".
+Y esa asignacion va entre comillas doble.A diferencia de la variable.
+char q solo guarda una letre y se asigna con comilla simple: letra='a'.
+
+
+
+
+
+
+
+
 
 
 
