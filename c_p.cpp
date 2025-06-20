@@ -9,6 +9,7 @@ int main()
     char letra;
     float calificacion1, calificacion2, promedio;
     string nombre;
+    short int contador;
 
     //ASIGNACION DE VARIABLE
     x=10;
@@ -31,6 +32,9 @@ int main()
     cout<<"El valor asignado a calificacion2 es: "<<calificacion2<<endl;
     cout<<"El promedio final es "<<promedio<<endl;
     cout<<"El alumno "<<nombre<<" tiene una calificación de: "<<promedio<<endl;
+
+    //VARIABLE DE CONTEO
+    cout<<"El valor de contador es: "<<contador<<endl;
 
 
 
