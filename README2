@@ -357,7 +357,11 @@ Hay que destacar que las alternativas del tipo j++  o i-- funcionan cuando el va
 
 De aqui sale un tipo especial de variales que son conocidas commo variablaes acumulativas o vaariables de conteo
 
-En el codigo c_p.cpp declararemos una variable de control llamada "contador" como va a ser un valor pequeño no necesito declararla tipo int, usaremos para estecaso short int que es mas que suficiente. 
+En el codigo c_p.cpp declararemos una variable de control llamada "contador" como va a ser un valor pequeño no necesito declararla tipo int, usaremos para estecaso short int que es mas que suficiente.
+
+UN ERROR COMUN AL INICIARSE EN LA PROGRAMACION RESPECTO A ESTA TEMATICA
+Declararemos a 3 vaariables adicionales tipo short int: a,b,c.
+
 
 
 

@@ -9,7 +9,7 @@ int main()
     char letra;
     float calificacion1, calificacion2, promedio;
     string nombre;
-    short int contador;
+    short int contador,a,b,c;
 
     //ASIGNACION DE VARIABLE
     x=10;
@@ -37,8 +37,24 @@ int main()
     cout<<"El valor de contador es: "<<contador<<endl;
     contador++;//SE INCREMENTA EN 1 EL VALOR DE LA VARIABLE
     cout<<"El valor de contador es "<<contador<<endl;
-    contador++;//SE CONTINUA HACIENDO INCREMENTO
+    contador++;//Se continua haciendo incremento
     cout<<"El valor de contador es "<<contador<<endl;
+    contador=contador*5;//MULTIPLICA LA VARIABLE POR 5
+    cout<<"El valor de contador es "<<contador<<endl;
+
+    a=10000;
+    b=20000;
+    c=a+b;
+
+    cout<<"El valor de la variable c es: "<<c<<endl;
+
+    a=12767;//PESCANDO UN ERROR DE LOGICA DE DEDESBORDAMIENTO DE RANGO DEL TIPO DE VARIABLE
+    c=a+b;
+    cout<<"El valor de la variable c es: "<<c<<endl;
+    a=12768;
+    c=a+b;
+    cout<<"La suma de a + b es: "<<c<<endl;
+
 
 
 
