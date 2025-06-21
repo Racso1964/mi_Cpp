@@ -9,7 +9,9 @@ int main()
     float calificacion1,calificacion2,promedio;
 
     cin>>x;
+    cin>>y;
     cout<<"El numero guardado en x es: "<<x<<endl;
+    cout<<"El numero guardado en y es: "<<y<<endl;
    
 
 
