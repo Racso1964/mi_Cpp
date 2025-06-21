@@ -362,6 +362,33 @@ En el codigo c_p.cpp declararemos una variable de control llamada "contador" com
 UN ERROR COMUN AL INICIARSE EN LA PROGRAMACION RESPECTO A ESTA TEMATICA
 Declararemos a 3 vaariables adicionales tipo short int: a,b,c.
 
+Asignaremos 10000 para a, 20000 para b luego c=a+b resultado dentro del rango.
+asignamos 12767 y lo sumamos con b resultado sigue dentro del rango.
+asignamos 12768 y lo sumamos con b resultado = -32768 !!ERROR.
+En ete momento se ha desbordado el rango maximo del tipo de variable short int el cuales 32767.
+Por esta razon tenemos que darnos cuenta que al ocurrir un desbordamiento de rango del tipo de varable,una vez que llega a su valor maximo, se reinicia a su valor minimo.
+Y a partir de alli comienza a contar nuevamente, porlotanto como se desbordo por unpunto, ese desbordamientoo lo paso a su valor minimo que es -32768, pues
+el rango de una variable tipo short  int va desde -32768 a 32767.
+
+Si se desbordara en 3 puntos entonces el valor sesgado va a ser -32766.
+
+Ya sabiendo commo se asignan los daatos a una variable, ya podemos ver que tambien podemos hacer operaciones aritmeticas y el resultado de esa operacion aritmetica aignarlo a una variable
+diferencia=15-6;
+para eta operacion el compilador trabaja primero al lado dercho de la igualdad y el resultado lo asigna a la variable situada al lado izquierdo de dicha igualdad.
+
+Otrra forma de declarar una vaariable es si ya de un parincipio sabemos cual valorva a tomar esa variable, entonces, podeemos hacer las dosoperaciones juntas: la de declaracion y asisgnacion.
+double total = 10;
+
+si quiero una operacion z=10/x donde x vale 8
+como resultado me dara 1 en vez de 1.25 que es el valor esperado. esto porque estoy haciendo una operacion entero entre entero.
+
+como z esta declarado como entero, aunque el resultado de la operacion sea un valor decimal, z tomara unicamente la parte entera de ese resultado.
+
+Por logeneral y como regla no escrita es que al hacer operaciones con divisiones, lo mas recomendable es que, siempre debo estar terbajando las variables como tipo flotante:
+calificacion1=8.5 calificacion2=10;aunque ponga un valor entero para calificacion2 no importaria porque como esta declarada como flotante, el compilador automaticamente le coloca el punto decimal.
+
+
+
 
 
 

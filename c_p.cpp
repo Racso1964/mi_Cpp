@@ -5,11 +5,13 @@ using namespace std;
 int main()
 {
     //DECLARACION DE VARIABLE
-    int x,y;
+    int x,y,z;
     char letra;
     float calificacion1, calificacion2, promedio;
     string nombre;
     short int contador,a,b,c;
+    double total=10;//Puedo declarar y asignar valor en una sola instruccion y colocar un numero entero aun siendo la variable de tipo flotante.
+
 
     //ASIGNACION DE VARIABLE
     x=10;
@@ -54,6 +56,14 @@ int main()
     a=12768;
     c=a+b;
     cout<<"La suma de a + b es: "<<c<<endl;
+
+    promedio=total*x;
+    cout<<"El promedio es: "<<promedio<<endl;
+
+    calificacion1=8.5;
+    calificacion2=10;//aun siendo flotante esta variable y he colocado un entero, el compilador se encarga de colocar el punto decimal (10.0)
+    promedio=calificacion1+calificacion2/2;// promedio resulta 13.5 ??? ERROR DE LOGICA  no se respeto la jerarquia de agrupacion.
+    cout<<"El promrdio final es "<<promedio<<endl;
 
 
 
