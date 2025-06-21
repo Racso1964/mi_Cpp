@@ -387,6 +387,20 @@ como z esta declarado como entero, aunque el resultado de la operacion sea un va
 Por logeneral y como regla no escrita es que al hacer operaciones con divisiones, lo mas recomendable es que, siempre debo estar terbajando las variables como tipo flotante:
 calificacion1=8.5 calificacion2=10;aunque ponga un valor entero para calificacion2 no importaria porque como esta declarada como flotante, el compilador automaticamente le coloca el punto decimal.
 
+ENTRADA DE DATOS.
+
+Cin: instruccion para leer un dato desde el teclado. Un numero, una letra o una palabra (CIN>>) a diferencia de (COUT<<) El simbolo de insercion difiere para cada instruccion.
+En ocaciones necesitamos introducir mas de una palabra e incluso multiples lineas de informacion, para tal caso lo recomendado es Getline.
+   
+getline():  Es una funcion de la biblioteca standard que se utiliza para leer lineas completas de texto de un flujo de entrada, como la entrada estandar del teclado o desde un archivo. a diferencia del operador >> que solo lee hasta el primer espacio en blanco, getline() lee todos los caracteres hasta encontrar un delimitador,(por defecto el caracter de nueva linea \n)
+
+Notando que el operador de insersion de CIN ">>" apunta a la derecha y simboliza entrada de dato.
+El simbolo de insercion de COUT "<<" apunta hacia la izquierda y simboliza salida de dato.
+
+CIN>>numero; para operar una instruccion CIN, luego de escribirla immediatamente va el operador de insrcion ">>", luego el nombre de la variable en donde almacenar el dato de entrada por teclado.
+CIN>>numero1>>numero2 Caso para cuando queremos leer varios datos del teclado.
+
+El compilador entiende que ya introduje el dato al momento de dar ENTER y lo almacena a la variable.
 
 
 
