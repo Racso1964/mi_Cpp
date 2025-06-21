@@ -19,7 +19,7 @@ int main()
     
     cout<<"El numero guardado en calificacion2 es: "<<calificacion2<<endl;
     
-    promedio=(calificacion1+calificacion2)/2.0;
+    promedio=(calificacion1+calificacion2)/2;
     cout<<"El promedio es: "<<promedio<<endl;
     
    
