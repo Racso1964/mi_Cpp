@@ -414,6 +414,11 @@ cout<<"Teclee el valor de y";
 cin>>y;
 
 De esta manera el usuario ya sabe que dato debe teclear.
+como tanto x e y son entero, al correr el programa si le introduzco un dato decimal, luego que el compilador lee ese dato se sale del programa, no sin antes darme el resultado del dato ingresado en x pero me dice que el dato de y es cero, esto porque como se salio de la corrida y no se logra pedir datos para y.
+
+para evitar este sesgo debo emplear los tipos de variables como flotante en vezde entero.
+
+
 
 
 
