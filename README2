@@ -402,7 +402,8 @@ CIN>>numero1>>numero2 Caso para cuando queremos leer varios datos del teclado.
 
 El compilador entiende que ya introduje el dato al momento de dar ENTER y lo almacena a la variable.
 
-
+Asi como puedo hacer declaraciones multiples, tambien puedo leer varios datos del teclado con una instruccion en una sola linea:
+cin>>x>>y;
 
 
 
