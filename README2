@@ -403,10 +403,17 @@ CIN>>numero1>>numero2 Caso para cuando queremos leer varios datos del teclado.
 El compilador entiende que ya introduje el dato al momento de dar ENTER y lo almacena a la variable.
 
 Asi como puedo hacer declaraciones multiples, tambien puedo leer varios datos del teclado con una instruccion en una sola linea:
-cin>>x>>y;
+cin>>x>>y; Aqui decimos q vamos a pedir dos datos: el primero para x, el segundo para y.
 
+Hay que hacer el programa entendible para el usuario porlotanto hay que rotular un texto donde se pide el valor requerido para cadavariable:
 
+cout<<"Teclee el valor de x";
+cin>>x;
 
+cout<<"Teclee el valor de y";
+cin>>y;
+
+De esta manera el usuario ya sabe que dato debe teclear.
 
 
 

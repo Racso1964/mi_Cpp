@@ -8,10 +8,20 @@ int main()
     int x,y;
     float calificacion1,calificacion2,promedio;
 
-    cin>>x>>y;
-    //cin>>y;
+    cout<<"Teclee el valor de x";
+    cin>>x;
+    cout<<"Teclee el valor de y";
+    cin>>y;
+
+
     cout<<"El numero guardado en x es: "<<x<<endl;
+
+    
     cout<<"El numero guardado en y es: "<<y<<endl;
+    
+    promedio=(x+y)/2.0;
+    cout<<"El promedio es: "<<promedio<<endl;
+    
    
 
 
