@@ -418,7 +418,16 @@ como tanto x e y son entero, al correr el programa si le introduzco un dato deci
 
 para evitar este sesgo debo emplear los tipos de variables como flotante en vezde entero.
 
+ENTRADA DE DATO char
+Si en vez de una letra se teclea 85, y despliego por consola el caracter tecleado me dira que es 8 y no 85
+porque  a pesar que el compilador continua leyendo luego del primer caracter, va a ignorar lo que este seguido a ese primer caracter pues un tipo de dato char solo almacena un caracter.
+es decir el primero que e halla tecleado, ese quedqra almacenado, por lo tanto no hay que creer que como si nos permite seguir introduciendo datos, el compilador lo va a tomar en cuenta.
 
+Si tecleara Hola mundo! la unica letra que almacenara sera "H".
+
+ALMACENAR UNA PALABRA.
+No me conviene una variable char.
+STRING  es el tipo de variable apropiado para este caso.
 
 
 

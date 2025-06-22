@@ -7,8 +7,10 @@ int main()
     //DECLARACION DE VARIABLE
     int x,y;
     float calificacion1,calificacion2,promedio;
+    char letra;
+    string nombre;
 
-    cout<<"Teclee el valor de calificacion1 ";
+    /*cout<<"Teclee el valor de calificacion1 ";
     cin>>calificacion1;
     cout<<"Teclee el valor de calificacion2 ";
     cin>>calificacion2;
@@ -22,6 +24,18 @@ int main()
     promedio=(calificacion1+calificacion2)/2;
     cout<<"El promedio es: "<<promedio<<endl;
     
+    cout<<"Tecle un caracter ";
+    cin>>letra;
+    cout<<"La letra que tecleaste es: "<<letra<<endl;
+    */
+    //INTRODUCIR UNA PALABRA
+    cout<<"Introduce tu nombre: ";
+    cin>>nombre;
+
+    cout<<"Bienvenido "<<nombre<<endl;
+
+
+
    
 
 
