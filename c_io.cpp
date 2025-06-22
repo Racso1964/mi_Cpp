@@ -27,12 +27,18 @@ int main()
     cout<<"Tecle un caracter ";
     cin>>letra;
     cout<<"La letra que tecleaste es: "<<letra<<endl;
-    */
-    //INTRODUCIR UNA PALABRA
+    
+    INTRODUCIR UNA PALABRA
     cout<<"Introduce tu nombre: ";
     cin>>nombre;
 
     cout<<"Bienvenido "<<nombre<<endl;
+*/
+    //INTRODUCIR VARIAS PALABRAS.en variable string y getline() con 2 parametros
+    cout<<"Introduce tu nombre: ";
+    getline(cin,nombre);
+    cout<<"Bienvenido "<<nombre<<endl;
+
 
 
 

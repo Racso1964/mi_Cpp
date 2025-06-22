@@ -425,7 +425,7 @@ es decir el primero que e halla tecleado, ese quedqra almacenado, por lo tanto n
 
 Si tecleara Hola mundo! la unica letra que almacenara sera "H".
 
-INTRODUCIR UNA PALABRA.
+INTRODUCIR UNA PALABRA.en string
 No me conviene una variable char.
 STRING  es el tipo de variable apropiado para este caso.
 Un string acepta una palabra completa a diferencia de un char que acepta solo un caracter o digito del 0 al 9.
@@ -433,8 +433,31 @@ Un string acepta una palabra completa a diferencia de un char que acepta solo un
 Una vez introducida la palabra. que pasa si continuo tecleando otra palabra. En estos casos el compilador acepta las palabras mas no las toma en cuenta, solamente almacenara la primera palabra.
 
 
+INTRODUCIR VARIAS PALABRAS.en variable string
+
+Para introducir por teclado varias palabras o una serie de lineas de texto:
+GETLINE es la instruccion para leer por teclado varias palabras.
+
+Al igual que con la instruccion de lectura por teclado "cin"
+Con Getline al momento de teclear enter el compilador lee todo lo que hallamos tecleado y lo almacena en una variable.
+
+GETLINE tiene varias combinaciones:
 
 
+caso 1: 
+Utilizar GETLINE con 2 parametros
+┌─────────────────────────┬───────────────────────────┐          
+│  INSTRUCCION DE LECTURA │ PARAMETROS                │
+├─────────────────────────┼───────────────────────────┤          
+│GETLINE con 2 parametros │getline(cin,nomb_variable) │
+├─────────────────────────┼───────────────────────────┤          
+│                         │                           │
+└─────────────────────────┴───────────────────────────┘
+
+En este caso podemos escribir todo lo que queramos incluyendo espacios y el compilador lo aceptara y almacenara todo tal cual lo tecleemos.
+Para este caso GETLINE  con 2 parametros, prmero escribimos la instruccion "getline()" luego dentro del parentesis el operador "cin"para entrada por teclado seguido una coma para separarlo del nombre de la variable a almacenar la informacion tecleada.
+Esta introduccion se ejecuta al momento de dar la instruccion ENTER.
+De igual puedo usar una variable tipo string.
 
 
 
