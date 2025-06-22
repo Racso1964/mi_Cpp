@@ -425,9 +425,14 @@ es decir el primero que e halla tecleado, ese quedqra almacenado, por lo tanto n
 
 Si tecleara Hola mundo! la unica letra que almacenara sera "H".
 
-ALMACENAR UNA PALABRA.
+INTRODUCIR UNA PALABRA.
 No me conviene una variable char.
 STRING  es el tipo de variable apropiado para este caso.
+Un string acepta una palabra completa a diferencia de un char que acepta solo un caracter o digito del 0 al 9.
+
+Una vez introducida la palabra. que pasa si continuo tecleando otra palabra. En estos casos el compilador acepta las palabras mas no las toma en cuenta, solamente almacenara la primera palabra.
+
+
 
 
 
