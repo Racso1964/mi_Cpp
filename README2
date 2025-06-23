@@ -460,6 +460,29 @@ Esta introduccion se ejecuta al momento de dar la instruccion ENTER.
 De igual puedo usar una variable tipo string.
 
 
+caso 2:
+UTILIZAR GETLINE CON 3 PARAMETROS
+
+
+
+┌─────────────────────────┬──────────────────────────────┐          
+│  INSTRUCCION DE LECTURA │ PARAMETROS                   │
+├─────────────────────────┼──────────────────────────────┤          
+│GETLINE con 2 parametros │getline(cin,nomb_variable," ")│
+├─────────────────────────┼──────────────────────────────┤          
+│GETLINE con 3 parametros │                              │
+└─────────────────────────┴──────────────────────────────┘
+
+La segunda opcion de GELINE CON 3 PARAMETROS, este tercer parametro sirve para poder definir un caracter o una combinacion de ellos y le indican al compilador que hasta alli se debeb de dejar de leer los datos tecleados.
+La sintaxis es igual a la anterior adicionando un tercer parametro como bandera para el compilador deje de leer.
+Ese tercer parametro puede ser un espaciador o espacio en blanco, un caracter particular que nos sirva de delimitador tipo char para saber que hasta alli debemos dejar de teclear.
+El delimitador o tercer parametro como debe ser un char, debe ir entre comillas simple    ' '.
+
+
+
+
+
+
 
 
 

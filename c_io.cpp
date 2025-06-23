@@ -33,20 +33,19 @@ int main()
     cin>>nombre;
 
     cout<<"Bienvenido "<<nombre<<endl;
-*/
-    //INTRODUCIR VARIAS PALABRAS.en variable string y getline() con 2 parametros
+
+    INTRODUCIR VARIAS PALABRAS.en variable string y getline() con 2 parametros
     cout<<"Introduce tu nombre: ";
     getline(cin,nombre);
     cout<<"Bienvenido "<<nombre<<endl;
+    */
 
 
+    //GETLINE CON 3 PARAMETROS USANDO EL SEÑUELO % COMO LIMITE DE LECTURA
 
-
-   
-
-
-
-
+    cout<<"Introduce tu nombre: ";
+    getline(cin,nombre,'$');
+    cout<<"Bienvenido "<<nombre<<endl;
 
 
 
