@@ -468,15 +468,48 @@ UTILIZAR GETLINE CON 3 PARAMETROS
 ┌─────────────────────────┬──────────────────────────────┐          
 │  INSTRUCCION DE LECTURA │ PARAMETROS                   │
 ├─────────────────────────┼──────────────────────────────┤          
-│GETLINE con 2 parametros │getline(cin,nomb_variable," ")│
+│GETLINE con 2 parametros │getline(cin,nomb_variable)    │
 ├─────────────────────────┼──────────────────────────────┤          
-│GETLINE con 3 parametros │                              │
+│GETLINE con 3 parametros │getline(cin,nomb_variable," ")│
 └─────────────────────────┴──────────────────────────────┘
 
 La segunda opcion de GELINE CON 3 PARAMETROS, este tercer parametro sirve para poder definir un caracter o una combinacion de ellos y le indican al compilador que hasta alli se debeb de dejar de leer los datos tecleados.
 La sintaxis es igual a la anterior adicionando un tercer parametro como bandera para el compilador deje de leer.
 Ese tercer parametro puede ser un espaciador o espacio en blanco, un caracter particular que nos sirva de delimitador tipo char para saber que hasta alli debemos dejar de teclear.
 El delimitador o tercer parametro como debe ser un char, debe ir entre comillas simple    ' '.
+
+Este tipo sirve mucho en alguna aplicacion donde se pida introducir nombres completo con apellidos, matricula, donde halla una combinacion de numeros con textos, etc.
+
+
+Caso 3
+GETLINE CON LIMITES DE CARACTERES.
+
+┌─────────────────────────┬──────────────────────────────┐          
+│  INSTRUCCION DE LECTURA │ PARAMETROS                   │
+├─────────────────────────┼──────────────────────────────┤          
+│GETLINE con 2 parametros │getline(cin,nomb_variable)    │
+├─────────────────────────┼──────────────────────────────┤          
+│GETLINE con 3 parametros │getline(cin,nomb_variable,' ')│
+├─────────────────────────┼──────────────────────────────┤          
+│GETLINE con limite de    │cin.getline(variable,valor)   │
+│caracteres               │                              │
+└─────────────────────────┴──────────────────────────────┘
+
+Para este caso se le indica al compilador la cantidad de letras que se requiere que lea y almacene.
+La sintaxis exige previamente declarar una variable char porque la necesitamos para leer palabras completa o textos completo, esa variable
+tipo char va seguida de un juego de corchetes para declarar la cantidad de caracteres permitidos para ser leidos desde el teclado.
+como ejemplo:
+
+char nombre[50];
+cin.getline(nombre,50);
+
+Se le instruye al compilador mediante la instruccion cin.getline() la cantidad de letras a leer mediante la sintaxis que vamos a utilizar.
+Lo primero que debemos hacer es declarar una variable de tipo char y dentro del corchete colocamos un numero indicando el maximo de caracteres permitidos a leer desde el teclado.
+ESta instruccion difiere un poco de los casos 1 y 2 arriba señalados: cin.getline(variable,numero)
+
+Dentro del parentesis va la variable que declaraos como char seguido una coma y a continuacion el limite de araceres que se le va a permitir al compilador que lea.
+Una vez que se halla tecleado el limite de caracreres, lo que sea que sigamos escribiendo simplemente el compilador lo ignorara
+
 
 
 

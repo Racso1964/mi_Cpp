@@ -8,6 +8,7 @@ int main()
     int x,y;
     float calificacion1,calificacion2,promedio;
     char letra;
+    char letra2[20];
     string nombre;
 
     /*cout<<"Teclee el valor de calificacion1 ";
@@ -38,14 +39,23 @@ int main()
     cout<<"Introduce tu nombre: ";
     getline(cin,nombre);
     cout<<"Bienvenido "<<nombre<<endl;
-    */
+    
 
 
-    //GETLINE CON 3 PARAMETROS USANDO EL SEÑUELO % COMO LIMITE DE LECTURA
+    GETLINE CON 3 PARAMETROS USANDO EL SEÑUELO % COMO LIMITE DE LECTURA
 
     cout<<"Introduce tu nombre: ";
     getline(cin,nombre,'$');
     cout<<"Bienvenido "<<nombre<<endl;
+    */
+
+
+    //GETLINE CON LIMITE DE CARACRERES
+
+    cout<<"Introduce tu texto: ";
+    cin.getline(letra2,20);
+    cout<<"Bienvenido "<<letra2<<endl;
+
 
 
 
