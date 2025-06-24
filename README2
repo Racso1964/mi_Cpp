@@ -510,6 +510,22 @@ ESta instruccion difiere un poco de los casos 1 y 2 arriba señalados: cin.getli
 Dentro del parentesis va la variable que declaraos como char seguido una coma y a continuacion el limite de araceres que se le va a permitir al compilador que lea.
 Una vez que se halla tecleado el limite de caracreres, lo que sea que sigamos escribiendo simplemente el compilador lo ignorara
 
+Sucede muy comun cuando usamos la instruccion cin con getline y previo en elcodigo estoy usando un cin normal,algo como:
+cout"Intruduzca el numero x: ";
+cin>>x;
+como ya sabemos cin lee un dato del teclado solo luego de presionar ENTER.
+En el momento q se presiona ENTER el compilador deja de leer y continua con el resto del programa
+sinembargo el enter sirve tambien para terminar la instruccion getline,osea mientras no de un Enter el compilador no deja de leed datos del teclado.
+
+Entonces que pudiera sucedir Que el compilador se salta y no termina las instrucciones del codigo.
+Lo que sucedio fue que cuando escribimos el valor del numero que nos piden en "Intruduzca el numero x:" y luego le dimos ENTER
+SUCEDE que el ultimo caracter que quedo almacenado en el BUFER fue precisamente la diagonal invertida + n que representa un salto de linea
+es tomado en cuenta por la lnea del getline y por eso el compilador entiende que alli se termino la instruccion y ahi se salta.
+Entonces para resolver esta exposicion al error debemos que en caso que en el codogo estemos usando cin y getline, antes de pasar a la linea del getline
+lo ideal es utilizar la instruccion "cin.ignore();".
+con esa linea le decimos al compilador que ignore el salto de linea que dimos anteriormente al teclear un numero para que asi no piense que ya el programa termino de escribir el texto y asi permita pues esribir el resto de lo pautado como peticion por teclado.osea que ignore el salto de linea del cin anterior.
+
+
 
 
 
