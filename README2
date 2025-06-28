@@ -555,6 +555,19 @@ Dentro de esta libreria se encuentran las siguientes funciones
 └─────────────────────────┴───────────────────────────────┴───────────────────────────────────┘
 Los resultados debo guardarlos en una variable.
 
+Debo hacerme 3 preguntas basicas para encarar el analisis del problema:
+1- Que quiero que haga el programa.
+2- ¿Que entradas se requieren para crear las salidas deseadas?
+3- ¿Que salidas debe producir el programa?
+
+1- calcular r.
+2- necesito el valor de m, el valor de l, el valor de a. 
+3- Debe producir un valor numerico que representa r, 
+
+Porlotanto debo declarar 4 variables.
+Como voy a necesitar valores con decimales, declaro todas tipo flotante.
+
+
 
 
 
