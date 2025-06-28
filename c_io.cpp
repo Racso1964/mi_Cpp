@@ -63,7 +63,7 @@ int main()
 
 
 
-
+    cin.ignore();
     cout<<"Introduce tu texto: ";
     cin.getline(letra2,20);
     cout<<"Bienvenido "<<letra2<<endl;
