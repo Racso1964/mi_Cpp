@@ -528,6 +528,32 @@ con esa linea le decimos al compilador que ignore el salto de linea que dimos an
 
 
 
+LIBRERIA MATH.H (cmath)
+Antes de comenzar a escribir un programa y hacer calculos matematicos, agregamos la libreria q contiene las instrucciones a utilizar.
+Dentro de esta libreria se encuentran las siguientes funciones
+
+┌─────────────────────────┬───────────────────────────────┬───────────────────────────────────┐
+│  NOMBRE DE LA FUNCION   │         DESCRIPCION           │       VALOR DEVUELTO              │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        abs(a)           │      valor absoluto           │mismo tipo de dato que elargumento │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        pow(a1,a2)       │  a1 elevado a la potencia a2  │tipo de dato del argumento a1      │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        sqrt(a)          │raiz cuadradaa de un nummero R.│       presicion doble             │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        sin(a)           │   seno de (a en radianes)     │          doble                    │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        cos(a)           │   seno de (a en radianes)     │          double                   │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        tan(a)           │   tangente de (a en radianes) │          doble                    │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        log(a)           │   logaritmo natural de a      │          doble                    │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        log 10(a)        │ logaritmo comun base 10 de a  │          doble                    │
+├─────────────────────────┼───────────────────────────────┼───────────────────────────────────┤                   
+│        exp(a)           │    elevado a la potencia a    │          doble                    │
+└─────────────────────────┴───────────────────────────────┴───────────────────────────────────┘
+Los resultados debo guardarlos en una variable.
 
 
 
