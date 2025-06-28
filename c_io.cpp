@@ -52,13 +52,23 @@ int main()
 
     //GETLINE CON LIMITE DE CARACRERES
 
+    /*cout<<"Introduce tu texto: ";
+    cin.getline(letra2,20);
+    cout<<"Bienvenido "<<letra2<<endl;
+    */
+    //Comportamiento de RETURN justo antes de usar GETLINE
+    cout<<"Introduzca un numero";
+    cin>>x;
+    cout<<"El numero guardado es: "<<x<<endl;
+
+
+
+
     cout<<"Introduce tu texto: ";
     cin.getline(letra2,20);
     cout<<"Bienvenido "<<letra2<<endl;
-
-
-
+    
 
 
     return 0;
-}
+}     

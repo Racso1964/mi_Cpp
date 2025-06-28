@@ -524,7 +524,7 @@ es tomado en cuenta por la lnea del getline y por eso el compilador entiende que
 Entonces para resolver esta exposicion al error debemos que en caso que en el codogo estemos usando cin y getline, antes de pasar a la linea del getline
 lo ideal es utilizar la instruccion "cin.ignore();".
 con esa linea le decimos al compilador que ignore el salto de linea que dimos anteriormente al teclear un numero para que asi no piense que ya el programa termino de escribir el texto y asi permita pues esribir el resto de lo pautado como peticion por teclado.osea que ignore el salto de linea del cin anterior.
-git
+
 
 
 
