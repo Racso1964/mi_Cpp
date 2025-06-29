@@ -567,6 +567,8 @@ Debo hacerme 3 preguntas basicas para encarar el analisis del problema:
 Porlotanto debo declarar 4 variables.
 Como voy a necesitar valores con decimales, declaro todas tipo flotante.
 
+Hay que acotar que un programa optimizado es aquel que tiene la menor cantidad de variables posibles.
+
 
 
 
