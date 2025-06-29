@@ -5,13 +5,16 @@ using namespace std;
 
 int main()
 {
-    //calcular y es igual a equis cuadrado mas 5 equis.
+    //calcular y es igual a raiz cuadrada de 3 equis cuadrada mas 6 sobre 2 equis
     float y,x;
+    float numerador, denominador;
+
     cout<<"Introduzca el valor de x: ";
     cin>>x;
-    y= pow(x,2)+5*x;
-
-    cout<<"y es igual a: "<<y<<endl;
+    numerador=3*pow(x,2)+6;
+    denominador=2*x;
+    y=sqrt(numerador/denominador);
+    cout<<"y = "<<y<<endl;
     
     
 
