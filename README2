@@ -572,7 +572,8 @@ Hay que acotar que un programa optimizado es aquel que tiene la menor cantidad d
 sqrt sirve unicamente para raiz cuadrada, si necesitamos resolver raices superiores
 debemos usar la potencia elevada a un exponente fraccionario de manera el denominador de ese exponente sea el grado de la raiz a resolver
 
-
+Cuando se procesa el calculo de funciones cuadraticas y sa da el caso que los valores introducidos por el usuario para las variables a,b,y c de dicha formula y el valor de "c" es mayor de "a" y de "b"; para estos casos la formula generara dentro de la raiz un valor negativo
+esto hara que el procesador de como resultado para esa formula una nomeclatura "nan" (not at number) y significa "no es un numero".
 
 
 
