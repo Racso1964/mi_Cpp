@@ -7,7 +7,7 @@ int main()
 {
     float x,y,z;
 
-    // z = la raiz cuadrada de{[( 3x elevada a 5)  sobre (2xy)] + [(y al cuadrado)sobre (x+y])]}
+    // z = la raiz cubica de x mas equis al cuadrado mas y al cuadrado; todo ello sobre 5x
 
     cout<<"Introduzca el valor de x: ";
     cin>>x;
@@ -16,7 +16,7 @@ int main()
     cin>>y;
 
 
-    z=sqrt(3*pow(x,5)/(2*x*y)+(pow(y,2))/(x+y));
+    z=(pow(x,1/3)) + ((pow(x,2))+pow(y,2)) / (5*x);
     cout<<"z = "<<z<<endl;
     
     
