@@ -569,6 +569,9 @@ Como voy a necesitar valores con decimales, declaro todas tipo flotante.
 
 Hay que acotar que un programa optimizado es aquel que tiene la menor cantidad de variables posibles.
 
+sqrt sirve unicamente para raiz cuadrada, si necesitamos resolver raices superiores
+debemos usar la potencia elevada a un exponente fraccionario de manera el denominador de ese exponente sea el grado de la raiz a resolver
+
 
 
 
