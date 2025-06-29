@@ -9,7 +9,7 @@ int main()
     float y,x;
     cout<<"Introduzca el valor de x: ";
     cin>>x;
-    y= x*x+5*x;
+    y= pow(x,2)+5*x;
 
     cout<<"y es igual a: "<<y<<endl;
     
