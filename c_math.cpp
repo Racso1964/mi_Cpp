@@ -9,8 +9,9 @@ int main()
 
     // Calcular seno de un angulo"
 
-    cout<<"Introduzca el valor del angulo en radianes: ";
+    cout<<"Introduzca el valor del angulo en grados: ";
     cin>>angulo;
+    angulo=angulo*3.1416/180;
 
     y = sin(angulo);
 
