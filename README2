@@ -576,6 +576,9 @@ Cuando se procesa el calculo de funciones cuadraticas y sa da el caso que los va
 esto hara que el procesador de como resultado para esa formula una nomeclatura "nan" (not at number) y significa "no es un numero".
 
 
+FUNCIONES TRIGONOMETRICAS CON LIBRERIA MATH.H O cmath
+Se calculara seco, coseno y tangente de un angulo, recordando que el angulo debe estar en radianes
+
 
 
 
