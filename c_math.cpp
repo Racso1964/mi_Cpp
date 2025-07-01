@@ -6,12 +6,13 @@ using namespace std;
 int main()
 {
     float angulo,y;
+    const float pi=3.1416;
 
     // Calcular seno de un angulo"
 
     cout<<"Introduzca el valor del angulo en grados: ";
     cin>>angulo;
-    angulo=angulo*3.1416/180;
+    angulo=angulo*pi/180;
 
     y = sin(angulo);
 
