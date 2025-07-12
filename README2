@@ -602,6 +602,8 @@ Los operadores relacionales comparan entre 2 operandos.
 Los operadores relacionales crean expresiones simples porque unicamente compara entre 2 operandos.
 
 OPERADORES LOGICOS se unan para crear condiciones mas complejas.
+
+Los operadores Loicos comparan entre 2 Expresiones simple.
 &&  -->AND,  || -->OR   !-->Not
 
 
@@ -616,6 +618,14 @@ A veces en nuestro programa necesitamos hacer comparaciones mucho mas complejas 
 1 AND 0 = 0(FALSO)
 0 and 1 = 0
 0 AND 0 = 0
+
+OR = || La condicion es verdadera si cualquiera de las dos expresiones individuales son verdadera o ambas son verdaderas.
+
+0 OR 0 = 0
+1 OR 0 = 1
+0 OR 1 = 1
+1 OR 1 = 1
+
 
 
 
