@@ -640,6 +640,37 @@ edad = 25
 edad > 30 --> Falso (cero)
 !(edad > 30) --> Verdadero (uno).
 
+JERARQUIA DE OPERADORES LOGICOS Y RELACIONALES.
+Si hay expresiones relacionales, se resuelven primero parentesis, luego se encuentran los valores de verdad de las expresiones relacionales y por ultimo se aplica la jerarquia de los operadores logicos.
+Los operadores relacionales se utilizan para comparar valores y variables como mayor que(>), menor que(>), igual a (==), mayor o igual que (>=), menor o igual que (<=) y diferente de (!=).
+
+()
+^
+*,/,%
+==, !=, <, >, <=, >=, 
+NOT
+AND
+OR.
+
+┌─────────────────────────┬──────────────────────────────┐          
+│  OPERADOR               │ ASOCIATIVIDAD                │
+├─────────────────────────┼──────────────────────────────┤          
+│! unitario - ++ --       │derecha a izquierda           │
+├─────────────────────────┼──────────────────────────────┤          
+│ *,/,%                   │Izquierda a derecha           │  
+├─────────────────────────┼──────────────────────────────┤          
+│  + -                    │Izquierda a derecha           │
+├─────────────────────────┼──────────────────────────────┤          
+│< <=  > >=               │Izquierda a derecha           │  
+├─────────────────────────┼──────────────────────────────┤          
+│==  !=                   │Izquierda a derecha           │  
+├─────────────────────────┼──────────────────────────────┤          
+│& &                      │Izquierda a derecha           │  
+├─────────────────────────┼──────────────────────────────┤         
+│||                       │Izquierda a derecha           │  
+├─────────────────────────┼──────────────────────────────┤
+│= += -= *= /=            │derecha a izquierda           │    
+└─────────────────────────┴──────────────────────────────┘
 
 
 
