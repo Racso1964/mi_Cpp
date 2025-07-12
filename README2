@@ -626,6 +626,19 @@ OR = || La condicion es verdadera si cualquiera de las dos expresiones individua
 0 OR 1 = 1
 1 OR 1 = 1
 
+! NOT Cambia una expresion a su estado opuesto.
+
+si es verdadero --> FALSO
+si es falso --> VERDADERO
+
+!(NOT)  Crea una negacion del resultado de laexpresion simple, es como anteponer la palabra "no".
+"no es verdadero -> (es falso)"
+"no es falso -> (es verdadero)".
+
+ejemplo:
+edad = 25
+edad > 30 --> Falso (cero)
+!(edad > 30) --> Verdadero (uno).
 
 
 
