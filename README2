@@ -580,6 +580,28 @@ FUNCIONES TRIGONOMETRICAS CON LIBRERIA MATH.H O cmath
 Se calculara seco, coseno y tangente de un angulo, recordando que el angulo debe estar en radianes
 
 
+OPERACIONES LOGICAS Y RELACIONALES. 
+
+Los operadores relacionales comparan entre 2 operandos.
+
+┌────────────────────┬───────────────┬──────────────────┐
+│OPERADOR RELACIONAL │ DESCRIPCION   │     EJEMPLO      │
+├────────────────────┼───────────────┼──────────────────┤                   
+│        <           │  menor que    │    edad < 30     │
+├────────────────────┼───────────────┼──────────────────┤                   
+│        >           │  mayor que    │   altura > 6.2   │
+├────────────────────┼───────────────┼──────────────────┤                   
+│        <=          │menor o igual a│gravable <= 20000 │
+├────────────────────┼───────────────┼──────────────────┤                   
+│        >=          │mayor o igual a│  temp >= 38.6    │
+├────────────────────┼───────────────┼──────────────────┤                   
+│        ==          │   igual a     │  calific == 100  │
+├────────────────────┼───────────────┼──────────────────┤                   
+│        !=          │no es igual a  │  numero != 250   │
+└────────────────────┴───────────────┴──────────────────┘
+
+
+
 
 
 

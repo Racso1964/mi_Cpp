@@ -8,17 +8,13 @@ int main()
     float angulo,y;
     const float pi=3.141592;
 
-    // Calcular seno y coseno de un angulo"
+    // Convertir radianes a grados"
 
-    cout<<"Introduzca el valor del angulo en grados: ";
+    cout<<"Introduzca el valor del angulo en radianes: ";
     cin>>angulo;
-    angulo=angulo*pi/180;
+    angulo=angulo*pi*180;
 
-    y = sin(angulo);
-    cout<<"El seno de "<<angulo<<" es: "<<y<<endl;
-
-    y = cos(angulo);
-    cout<<"El coseno de "<<angulo<<" es: "<<y<<endl;
+    cout<<"El valor del angulo en grados es: "<<angulo<<endl;
 
 
 
