@@ -4,9 +4,9 @@
 using namespace std;
 
 int main()
-//Comparaciones entre letras
+//Comparaciones entre palabras
 {
-    cout<<"Compara si A > B "<<('A' > 'B');//Resultado logico es cero pueto q A no es mayor que B
+    cout<<"Compara si Hola es mayor que mundo "<<("Hola" > "mundo");//Resulta cero porque el compilador compara unicamente las dos letras iniciales de cada palabra: H > m, dentro del codigo ASCII H tiene un numero asignado menor que el de m
 
 
 
