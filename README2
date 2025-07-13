@@ -672,6 +672,20 @@ OR.
 │= += -= *= /=            │derecha a izquierda           │    
 └─────────────────────────┴──────────────────────────────┘
 
+Resolvamos la siguiente expresion.
+(6*3 == 36/2) || (13<3*3+4) && !(6-2<5)
+
+Podemos evaluar los 3 parentesis junto acotando que en jerarquia los parentesis van primero.
+
+PRIMER PARENTESIS.
+incluye (*multiplicacion, ==igualdad y /division). Tienen mayor jerarquia multiplicacion y division la igualdad queda para luego.
+
+PARENTESIS CENTRAL incluye (<menor que, *multiplicacion y +suma).
+Por jerarquia primero la multiplicacion se ejecuta.
+
+ULTIMO PARENTESIS.
+Incluye (-resta y <menor que)
+Por jerarquia primero la resta.
 
 
 
