@@ -4,14 +4,9 @@
 using namespace std;
 
 int main()
-//Comparaciones entre variables, creamos variable c para almacenar resultado
+//Comparaciones entre letras
 {
-    bool respuesta;
-    int a=10, b=5,c;
-    cout<<"La relacion a<b es: "<<(a<b)<<endl; 
-    
-    c=(a>b);//se altera el simbolo relacional y vemos la diferencia de resultado
-    cout<<"La relacion a>b es: "<<c<<endl;
+    cout<<"Compara si A > B "<<('A' > 'B');//Resultado logico es cero pueto q A no es mayor que B
 
 
 
