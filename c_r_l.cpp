@@ -4,14 +4,14 @@
 using namespace std;
 
 int main()
-//Expresiones logicas y relacionales
+//Comparaciones entre variables, creamos variable c para almacenar resultado
 {
     bool respuesta;
-    respuesta=1;//C++ recooce la instruccion false o true mas siempre va a devolver un 1 o un cero.
-    cout<<"La operacion 3>5 es:"<<(3>5)<<endl; 
+    int a=10, b=5,c;
+    cout<<"La relacion a<b es: "<<(a<b)<<endl; 
     
-    cout<<"La respuesta es: "<<respuesta<<endl;  
-
+    c=(a>b);//se altera el simbolo relacional y vemos la diferencia de resultado
+    cout<<"La relacion a>b es: "<<c<<endl;
 
 
 
