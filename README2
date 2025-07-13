@@ -665,7 +665,7 @@ OR.
 ├─────────────────────────┼──────────────────────────────┤          
 │==  !=                   │Izquierda a derecha           │  
 ├─────────────────────────┼──────────────────────────────┤          
-│& &                      │Izquierda a derecha           │  
+│&&                       │Izquierda a derecha           │  
 ├─────────────────────────┼──────────────────────────────┤         
 │||                       │Izquierda a derecha           │  
 ├─────────────────────────┼──────────────────────────────┤
@@ -687,12 +687,42 @@ ULTIMO PARENTESIS.
 Incluye (-resta y <menor que)
 Por jerarquia primero la resta.
 
+LOS OPERADORES LOGICOS QUEDAN PARA EL FINAL.
+Incluye (||OR,  && y ! negacion)
+Hay que destacar que el operador de negacion segun la tabla tiene mayor prioridad yy es cierto.
+mas su asociatividad es de derecha a izquierda, por ello primero se resuelve lo situado a su derecha.
+
+Resolviedo:
+(6*3 == 36/2) || (13<3*3+4) && !(6-2<5)
+ (18 == 18)   || (13<9+4)   &&  !(4<5)
+
+ (18 == 18) Resolviendo el operador logico de comparacion de igualdad.
+            Preguntamos ¿dieciocho es igual a dieciocho? Verdadero
+            porlotanto su respuesta es el valor logico 1
 
 
+ (13<3*3+4)  Por jerarquia el producto debe resolverse de primero:     
+  (13<9+4)   Por jerarquia la suma debe resolverse de primero:
+  (13<13)    Preguntamos ¿trece es menor que trece? falso
+             porlotanto su respuesta es el valor logico 0
 
 
+  !(6-2<5)   Por jerarquia se resuelve primero el parentesis. La resta se resuelve antes que el comparador de menor que.
+  !(4<5)      Por jerarquia se resuelve primero el parentesis. ¿cuatro es menor que cinco? cierto = 1   
+   !(1)
 
+   Quedando la expresion reducida a:
+   (6*3 == 36/2) || (13<3*3+4) && !(6-2<5)
+    (18 == 18)   || (13<9+4)   &&  !(4<5)
 
+         1       || (13 < 13)  &&  !1  Operadores incluidos ||, () y ! Tiene prioridad el parentesis.
+
+         1|| 0 && !1 Operadores incluidos ||, &&, !1
+         1|| 0 && 0  Operadores incluidos ||, && tiene prioridad AND.
+
+         1|| 0 && 0  AND es cierto unicamente si ambas expresiones son verdaderas.
+
+         1|| 0 
 
 
 
