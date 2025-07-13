@@ -56,6 +56,7 @@ Para poder declarar una función primero se debe colocar la línea de encabezado
         si lleva a cabo un encomendado.
 
 
+        ⒉ void nombre_función(int x, int y)
+        En este caso la función si recibe argumentos, es decir, recibe datos que va a necesitar para ejecutar sus instrucciones pero no devuelve nada.  Porlotanto su encabezado tendrá que ir de la forma Nª2 es decir "void" que no va a devolver nada, espacio, nombre que lleva la función y dentro de parentesis el tipo de dato y el nombre de la variable que va a estar recibiendo.  Sí la función recibe varios datos, cada uno de los datos, tiene que indicar quétipo de dato va a ser, qué nombre  e ir separados por coma.
 
-
-
+        En este caso, como ejemplo, se puso que la función recibe a un dato entero llamado "x" y un dato entero llamado "y". Esta función no regresa dato alguno.
