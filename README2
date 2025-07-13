@@ -722,7 +722,8 @@ Resolviedo:
 
          1|| 0 && 0  AND es cierto unicamente si ambas expresiones son verdaderas.
 
-         1|| 0 
+         1|| 0       OR con cualquiera de los operando sea verdadero el resultado es verdadero.
+         1           Porlotanto la expresion dio como resultado final verdadero que es igual a 1
 
 
 
