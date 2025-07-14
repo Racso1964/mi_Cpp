@@ -60,3 +60,18 @@ Para poder declarar una función primero se debe colocar la línea de encabezado
         En este caso la función si recibe argumentos, es decir, recibe datos que va a necesitar para ejecutar sus instrucciones pero no devuelve nada.  Porlotanto su encabezado tendrá que ir de la forma Nª2 es decir "void" que no va a devolver nada, espacio, nombre que lleva la función y dentro de parentesis el tipo de dato y el nombre de la variable que va a estar recibiendo.  Sí la función recibe varios datos, cada uno de los datos, tiene que indicar quétipo de dato va a ser, qué nombre  e ir separados por coma.
 
         En este caso, como ejemplo, se puso que la función recibe a un dato entero llamado "x" y un dato entero llamado "y". Esta función no regresa dato alguno.
+
+
+        ⒊ int nombre_función(int x, int y)
+        Caso Nª3 es el más común. En este tipo de caso la función si recibe argumentos, esdecir, recive datos para trabajar y además regresa un dato que conocemos como dato resultado.
+
+        En este caso tenemos que colocar primero el tipo de dato de la variable que va a regresar; sí es una función que va a regresar un tipo de dato doble o float, entoncesdebemos de colocar doble o float antes del nombre de la función. Sí fuese que va a regresar una letra, entonces debemos de colocar "char" Espor eso que alli debe ir el tipo de dato de la variable q va a recibir lo que regresa la función; seguido de un espacio, seguiedo del nobre de la función e inmediatamente dentro de parentesis, nuevamente los datos que recibe la función.
+
+        Los datos que recibe la función por lo general se le conoce como argumento de la función.
+
+
+    Entonces esta es la forma de declarar los encabezados y obviamente después de esto viene la llave y colocamos allí todas las líneas de código que queremos que se ejecuten.
+
+    Ya teniendo declaradala función en la partede arriba; estas líneas de código no se van a ejecutar a menos que las invoquemos en algún lado.
+
+    Hay q destacar que en el programa siempre va a existir una función principal que es la que se conoce como "int main()" la cual es la función principal que en algun momento va a invocar o llamar a las demás funciones que se puedan construir o declarar.
