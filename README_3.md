@@ -93,5 +93,7 @@ Para poder declarar una función primero se debe colocar la línea de encabezado
     ⒉ nombre_función(a, b)
     es decir colocamos el nombre de la función y dentro del parentesis le mandamos los datos.
 
+    (CASO ⒊) Sabiendo que esta función va a devolver un valor, debemos de tener una variable en donde vamos a guardar el resultado que va a devolver la función. Porlotanto, se coloca una variable llamad "resultado" igual a el nombre de la función "nombre_función(a, b)" y dentro de parentesis los datosmo las variables que se le está enviando a dicha función.
+
 
 
