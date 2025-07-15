@@ -75,3 +75,21 @@ Para poder declarar una función primero se debe colocar la línea de encabezado
     Ya teniendo declaradala función en la partede arriba; estas líneas de código no se van a ejecutar a menos que las invoquemos en algún lado.
 
     Hay q destacar que en el programa siempre va a existir una función principal que es la que se conoce como "int main()" la cual es la función principal que en algun momento va a invocar o llamar a las demás funciones que se puedan construir o declarar.
+
+
+    FORMA DE INVOCAR O LLAMAR UNA FUNCIÓN.
+    ⒈   Nombre_función()
+    ⒉   Nombre_función(a, b)
+    ⒊   resultado = Nombre_función(a, b)
+
+
+
+    (CASO ⒈)
+    Dependiendo de cómo se halla declarado la función desde un principio, debemos de tener mucho cuidado a la hora de invocar la funcion de manera que coincida con el encabezado. Es decir, cuando la función es del tipo (CASO ⒈)  de una funcion que no recibe argumentos y que tampoco devuelve argumentos, entonces usamos la primera forma
+    ⒈ nombre_función()
+     donde solamente vamos a colocar el nombre de la función, abrimos y cerramos parentesis y listo.
+
+    
+
+
+

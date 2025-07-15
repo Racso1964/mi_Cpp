@@ -281,3 +281,9 @@ cout<<"El tamaño de un float es: "<<sizeof(float)<<endl;>>.
 cout<<"El tamaño de un double es: "<<sizeof(double)<<endl;>>.
 
 Esto nos va a decir directamente cual es el tamaño de espacio en  memoria que ocupa este tipo de dato. De esta manera nos podemos asegurar; pués hay algunos IDE que tienen un "long int" de 8 mientras otros tienen uno de 4.
+
+(CASO ⒉) Sí tenemos el caso de uuna función que recibe argumentos pero que no devuelve ningún dato o ningún valor entonces usamos el  (CASO ⒉)
+    ⒉ nombre_función(a, b)
+    es decir colocamos el nombre de la función y dentro del parentesis le mandamos los datos.
+
+    (CASO ⒊) Sabiendo que esta función va a devolver un valor, debemos de tener una variable en donde vamos a guardar el resultado que va a devolver la función. Porlotanto, se coloca una variable llamad "resultado" igual a el nombre de la función "nombre_función(a, b)" y dentro de parentesis los datosmo las variables que se le está enviando a dicha función.
