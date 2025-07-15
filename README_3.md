@@ -89,7 +89,9 @@ Para poder declarar una función primero se debe colocar la línea de encabezado
     ⒈ nombre_función()
      donde solamente vamos a colocar el nombre de la función, abrimos y cerramos parentesis y listo.
 
-    
+    (CASO ⒉) Sí tenemos el caso de uuna función que recibe argumentos pero que no devuelve ningún dato o ningún valor entonces usamos el  (CASO ⒉)
+    ⒉ nombre_función(a, b)
+    es decir colocamos el nombre de la función y dentro del parentesis le mandamos los datos.
 
 
 
