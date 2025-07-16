@@ -98,4 +98,144 @@ Para poder declarar una función primero se debe colocar la línea de encabezado
     NOTA: las declaración de funciones deben colocarse lineas arriba antes de la función "main".
 
 
+ORDENAR VECTORES MÉTODO DE LA BURBUJA.
+ 
+Dado un vector:
+   ↠ 5      
+     20
+     3
+     8
+     15
+     9
+     10
+     2
+
+Se requiere u ciclo for con un iterador "i" que se mueva desde la posición cero para poder rrecorrer todos los elementos del arreglo.
+
+Posteriormente se va a seleccionar de 2 en 2 es decir; lo que tiene la posición actual del índice "i" se compara con lo que hay en la posición siguiente.
+
+    ¿cinco es mayor que 20? no
+   ↠5        Entonces no pasa nada.Aumenta en 1 el valor         5
+     20       i del Índice iterador y se mueve a la siguiente    ↠20
+     3        posición.                                           3
+     8                                                            8
+     15                                                           15
+     9                                                            9
+     10                                                           10
+     2                                                            2
+
+    ¿veinte es mayor que 3? si --> "i" va a la posición siguiente
+      5                        y se intercambian los valores      5
+    ↠20                                                          3     
+      3                                                         ↠20
+      8                                                           8
+      15                                                          15
+      9                                                           9
+      10                                                          10
+      2                                                           2 
+
+    ¿20 es mayor que 8? si --> "i" va a la posición siguiente
+                                y se intercambian los valores
+      5
+      3
+    ↠20
+      8
+      15
+      9
+      10
+      2
+
+     ¿20 es mayor que 15? si --> "i" va a la posición siguiente
+                                y se intercambian los valores
+      5
+      3
+      8
+    ↠20
+      15
+      9
+      10
+      2
+
+    ¿20 es mayor que 9? si --> "i" va a la posición siguiente
+                                y se intercambian los valores
+      5
+      3
+      8
+      15
+    ↠20
+      9
+      10
+      2
+    
+       ¿20 es mayor que 10? si --> "i" va a la posición siguiente
+                                y se intercambian los valores
+      5
+      3
+      8
+      15
+      9
+    ↠20
+      10
+      2
+
+       ¿20 es mayor que 2? si --> "i" va a la posición siguiente
+                                y se intercambian los valores
+      5
+      3
+      8
+      15
+      9
+      10
+    ↠20
+      2
+
+
+       ¿20 es mayor que 10? si --> "i" va a la posición siguiente
+                                y se intercambian los valores
+      5
+      3
+      8
+      15
+      9
+      10
+      2
+      20
+
+      Ese sería el ultimo valor que toma "i" puesto que el ciclo se va a repetir n veces menos uno queriendo decir que el ciclo se detiene un lugar antes de la posición final del vector.
+
+      Aquí nos damos cuenta que el 20 estando en la segunda posición y siendo el valor mayor cumplió con todas las preguntas y se posicionó al final del vector; sinembargo éste aún no no está ordenado correctamente; entonces tenemos que repetir el procedimiento  osea el recorrido de todo el arreglo e ir comparando de dos endos en una segunda ronda.
+
+
+
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    5
+    3
+    20
+    8
+    15
+    9
+    10
+    2
+
+
+
+
+
+
 
