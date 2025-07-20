@@ -6,6 +6,8 @@
 // Se delcaran los vectores de tipo string
 // Las entradas cin al contener espacios generan inconsistencia petitiva
 // Implementa la la funcion getline
+// la función getline(...) que recibe como primer argumento el flujo de entrada de cin
+// como segundo argumento la variable en la que queremos poner el valor.
 #include <iostream>
 
 using namespace std;
