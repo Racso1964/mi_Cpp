@@ -247,6 +247,41 @@ Posteriormente se va a seleccionar de 2 en 2 es decir; lo que tiene la posición
       20
 
 
+DETERMINAR EL TAMAÑO EXACTO DE UN VECTOR.
+Nota: A veces no es posible determinar con facilidad el tamaño exacto de un vector, pero en C++ existen varias formas de determinar el tamaño de un array o vector fácilmente, aquí explicare un método. Cabe notar que este tamaño es el que ira como tope del ciclo for y sería equivalente a que nosotros mismos, en caso de saber el tamaño del vector, lo pongamos allí, sin embargo como veremos en otra sección no siempre es posible saber con certeza el tamaño de un vector, es por esto que explico cómo hacerlo.
+
+#include "iostream"
+
+using namespace std;
+
+int main()
+{
+    int edades[] = {1,2,9,8,16,32,9,50,36,20,1,87};
+    int limite = (sizeof(edades)/sizeof(edades[0]));
+    for (int i = 0; i < limite; i++)
+    {
+            cout<<edades[i]<<endl;
+    }
+}
+
+Vamos a ver de forma resumida en qué consiste y que hace cada una de estas líneas (las que están al interior del main).
+
+1ª linea --> int edades[] = {1,2,9,8,16,32,9,50,36,20,1,87};
+Tenemos en la primera línea la declaración de un vector que contiene las edades de 12 personas.
+
+2ª linea -->  int limite = (sizeof(edades)/sizeof(edades[0]));
+En la segunda línea, tenemos la declaración del límite del ciclo o en otras palabras el tamaño del array. El tamaño de un array se puede calcular de varias formas, aquí lo obtenemos calculando el tamaño (en bytes) del array entero, dividido por el tamaño del primer elemento de dicho array (también en bytes).
+
+El operador sizeof en C++, retorna el tamaño en bytes del elemento que se indica. En este caso, como es un array, indica el tamaño total de ese array en bytes. Como el tipo de dato int tiene un tamaño de 4 bytes, un array de 12 elementos de tipo int tendrá 48 bytes. Luego, el tamaño del primer elemento (o cualquiera de ellos) será 4. Así, 48 dividido entre 4 es 12, que es el tamaño de nuestro array. 
+
+3ª linea --> for (int i = 0; i < limite; i++).
+Desde la tercera línea hasta la sexta, tenemos entonces un ciclo for que comienza en cero y termina en el límite (es importante notar que la condición usada es estrictamente menor "<" y no menor o igual "<="), al interior de este ciclo, es donde accedemos a cada uno de los elementos del vector.
+
+5ª linea --> cout<<edades[i]<<endl;
+La quinta línea es quizá la más vital aunque sin las demás no tendríamos nada. En esta línea, estamos accediendo a cada uno de los elementos del array de edades, un elemento por cada vuelta que da el ciclo, accedemos a cada elemento poniendo entre los corchetes la variable i, que es la que esta cambiando a medida que el ciclo va girando, así estaremos accediendo a todos los elementos e imprimiéndolos por pantalla.
+
+
+
 
 
 
