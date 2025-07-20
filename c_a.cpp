@@ -1,4 +1,5 @@
-//Codigo_para_arreglos en C++. Referencia Documental en README_3.md
+// Referencia Documental en README_3.md
+// Recorrer vector y desplega sus elementos
 #include <iostream>
 
 using namespace std;
@@ -7,7 +8,13 @@ int main()
 {
    int edades[]={1,2,9,8,16,32,9,50,36,20,1,87};
    int limite = (sizeof(edades)/sizeof(edades[0]));
-   cout<<"El tamaño del vector en byte es: "<<limite<<endl;
+
+   for(int i=0; i < limite; i++)
+   {
+
+      cout<<edades[i]<<endl;
+   }
+   
     
 
    return 0;
