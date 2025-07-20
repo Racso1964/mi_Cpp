@@ -203,35 +203,73 @@ Posteriormente se va a seleccionar de 2 en 2 es decir; lo que tiene la posición
 
       Ese sería el ultimo valor que toma "i" puesto que el ciclo se va a repetir n veces menos uno queriendo decir que el ciclo se detiene un lugar antes de la posición final del vector.
 
-      Aquí nos damos cuenta que el 20 estando en la segunda posición y siendo el valor mayor cumplió con todas las preguntas y se posicionó al final del vector; sinembargo éste aún no no está ordenado correctamente; entonces tenemos que repetir el procedimiento  osea el recorrido de todo el arreglo e ir comparando de dos endos en una segunda ronda.
+      Aquí nos damos cuenta que el 20 estando en la segunda posición y siendo el valor mayor cumplió con todas las preguntas y se posicionó al final del vector; sinembargo éste aún no no está ordenado correctamente; entonces tenemos que repetir el procedimiento  osea el recorrido de todo el arreglo e ir comparando de dos endos en una 
 
+    SEGUNDA RONDA.
+    Volvemos a repetir ¿5 es menor que 3? si --> intercambio de posiciones el recorrido del vector se realizará todas las rondas que sea necesario, por ello hay que agregar un segundo índice para "j" que va desde cero hasta n-1.
 
+    Se dice n-1 porque sí el arreglo es de ocho elementos y el valor más pequeño se encuentra en la ultima posición entonces se necesitaría subirlo siete posiciones para posicionarlo en la primera posición. entonces ese proceso lo haría el iterador "j" que va a hacerlo de cero a siete o lo mismo q n-1.
 
+    Para realizar el intercambio de valore en este caso 5 y 3:
 
-      
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-    5
+  ↠5  ¿cinco es mayor que tres? si --> intercambio
     3
-    20
     8
     15
     9
     10
     2
+    20
+
+    sí tomamos el 3 y lo colocamos donde esta el 5, el valor 5 se perde´ria de la memoria y tendríamos dos veces el 3 tanto en primera como segunda posición porlotanto necesitamos guardar ese valor d la primera posición el algun lado. usaremos una variable auxiliar.
+
+    Aux=Arreglo[pos.Actual]
+
+    Ahora podemos colocar el valor de Aux en la segunda posición.
+
+    Arreglo[pos.Actual]= Arreglo[pos.siguiente]
+
+
+
+    Acotando que la posición actual lo marca "i";
+
+    Y ahora si, lo que hay en la posición siguiente, es decir, en la segunda posición, se cambia por el valor guardado en Aux.
+
+     Arreglo[pos.siguiente]
+      y de esta manera ya queda el intercambio realizado.
+      3
+      5
+      8
+      15
+      9
+      10
+      2
+      20
+
+
+
+
+
+
+
+
+      
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
 
 
