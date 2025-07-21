@@ -10,9 +10,9 @@ int main(){
 
    faltas = 15;
    calificacion = 8.5;
-   cout<<"aprobado: "<<((calificacion >= 7) and (calificacion <= 10) && (faltas <= 10))<<endl;
+   cout<<"aprobado: "<<((calificacion >= 7) and (calificacion <= 10) && !(faltas > 10))<<endl;
 
-   cout<<"reprobado "<<(calificacion <= 7 || faltas > 10);
+   
 
  
    
