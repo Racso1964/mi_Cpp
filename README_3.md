@@ -281,6 +281,7 @@ Desde la tercera línea hasta la sexta, tenemos entonces un ciclo for que comien
 La quinta línea es quizá la más vital aunque sin las demás no tendríamos nada. En esta línea, estamos accediendo a cada uno de los elementos del array de edades, un elemento por cada vuelta que da el ciclo, accedemos a cada elemento poniendo entre los corchetes la variable i, que es la que esta cambiando a medida que el ciclo va girando, así estaremos accediendo a todos los elementos e imprimiéndolos por pantalla.
 
 
+FUNCION QUE RECIBE UN VECTOR O ARREGLO.
 
 
 
