@@ -282,6 +282,21 @@ La quinta línea es quizá la más vital aunque sin las demás no tendríamos na
 
 
 FUNCION QUE RECIBE UN VECTOR O ARREGLO.
+Cuando utilizamos funciones y enviamos un dat o una variable a esa función, ese dato o esa variable se convierte en una copia de la variable original.
+
+Aunque en la función "int main()" exista, por jejemplo, unas variables x e y y, en la función que se esté trabajando tambien existe una función x e y; esto no necesario implica que sean las mismas variables. Esto, porque son variables locales.
+
+Es importante hacer notar que en el caso de arreglos que se envian como argumento; esto no funciona exactamente igual a el caso que enviamos variables como argumento.
+
+En C++ el compilador trabaja los arreglos por medio d apuntadores.
+
+Y en lugar de hacer una copia del arreglo original, lo que hace el compilador es recibir la dirección de memoria en donde se aloja ese arreglo y a partir de dicha dirección es que realiza las operaciones.
+
+Si el caso fuera que se requiere modificar los valores de un arreglo recibido como argumento de función,  a una función que no seencuentradentro de la función principal "int main()", de igualmanera el compilador estaría modificando los valores originales de ese arreglo. Por tal motivo hay que tomar en cuenta este concepto.
+
+Para el caso que se requiera modificar los valores del arreglo, recibido como argumento de función, lo más recomendable es hacer una copia del arreglo, antes de enviarlo como argumento.
+
+
 
 
 
