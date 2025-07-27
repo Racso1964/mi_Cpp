@@ -12,9 +12,9 @@ int main(){
     int A[n]; // SEGUNDO: Declara el vector "A" de "n" elementos
 
     cout<<"Introduzca los datos del vector  \n"; //TERCERO
-    for(i=0; i<n; i++){ //Ciclo for para pedir los elementos del arreglo
+    for(i=0; i<n; i++) //Ciclo for para pedir los elementos del arreglo
         cin>>A[i]; //CUARTO: Pedimos cada elemento del arreglo "A" en la posicion [i]
-    }
+    
 
 
   
