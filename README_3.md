@@ -355,6 +355,9 @@ NOTA: Es bueno destacar que aunque la funcion para calcular la media
       media = calcula_media(A,n); Es por tal razon que se asigna ese valor de "calcula_media(A,n)" a la variable "media" en el llamado a la funcion.
 
 
+      Final mente se manda a imprimir la variable q recibe el dato funcion.
+      cout<<"El promedio de los datos es: "<<media<<endl;
+
 
 
 
