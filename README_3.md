@@ -298,6 +298,62 @@ Para el caso que se requiera modificar los valores del arreglo, recibido como ar
 
 
 
+PROGRAMA QUE CALCULA MEDIA DE ARREGLO DE UNA DIMENSION
+
+#include <iostream>
+using namespace std;
+float calcula_media(int A[], short int n); //***SE DECLARA FUNCION
+float media;
+
+int main()
+{
+    short int n,i;
+
+    cout<<"Introduzca el número de elementos del arreglo: ";// 
+    cin>>n;
+    int A[n]; // SEGUNDO: Declara el vector "A" de "n" elementos
+
+    cout<<"Introduzca los datos del vector  \n"; 
+    for(i=0; i<n; i++) 
+        cin>>A[i]; 
+    
+    media = calcula_media(A,n);
+    
+    cout<<"El promedio de los datos es: "<<media<<endl;
+
+
+  
+
+   return 0;
+
+}
+
+float calcula_media(int A[], short int n) ***SE CREA CUERPO DE LA FUNCION
+{
+    float resultado, suma=0; 
+    short int i; 
+
+    for (i=0; i<n; i++)
+        suma=suma+A[i];
+    resultado = suma/n;
+    return resultado;
+
+}
+
+NOTA: Es bueno destacar que aunque la funcion para calcular la media
+      de los valores numericos del arreglo llamada "calcula_media" se
+      declaro antes de la funcion principal "int main()", se pudo haber
+      creado su cuerpo en esa misma ubicacion sin motivo de interferencia
+      a la logica de codificacion.
+
+      C++ permite la flexibilidad de declarar la funcion antes del "int main" y terminala con ";"para luego crear su cuerpo estructural luego de finalizar la funcion principal, que fue este caso.
+
+      Tambien destacar que una vez calculado la media dentro de la funcion
+      "calcula_media" ---> "suma/n" el resultado se guarda en una variable tipo float llamado "resultado" y seguido se implementa el "return" para poder devolver a la funcion "calcula_media" el valor contenido en la variable "resultado". Es en ese momento que la invocacion a la funcion "calcula_media(A,n)" toma el valor retornado por la variable 
+      "resultado" dentro de la funcio principal.
+
+      media = calcula_media(A,n); Es por tal razon que se asigna ese valor de "calcula_media(A,n)" a la variable "media" en el llamado a la funcion.
+
 
 
 
