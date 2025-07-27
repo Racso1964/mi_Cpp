@@ -360,7 +360,14 @@ NOTA: Es bueno destacar que aunque la funcion para calcular la media
 
 
 
+NOTA: No hubo la necesidad de hacer una copia del arreglo pues de antemano se sabia que no se volveria a utilizar.
 
+Ademas tampoco se realizo una moodificacion de sus datos.
+
+Hay que hacer notar que para casos donde si se va a realizar modificaciones de los valores del arreglo; es necesario hacer una copia del mismo previamente.
+
+
+FUNCION PARA BUSCAR EL MAXIMO DE UN ARREGLO
 
 
 
