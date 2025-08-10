@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// 
+// Programa crea una funcion que calcula el maximo y promedio de un arreglo
 
 float media;
 

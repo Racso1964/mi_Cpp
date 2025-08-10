@@ -367,7 +367,14 @@ Ademas tampoco se realizo una moodificacion de sus datos.
 Hay que hacer notar que para casos donde si se va a realizar modificaciones de los valores del arreglo; es necesario hacer una copia del mismo previamente.
 
 
-FUNCION PARA BUSCAR EL MAXIMO DE UN ARREGLO
+FUNCION PARA BUSCAR EL MAXIMO DE UN ARREGLO (c_f_2.cpp)
+
+FUNCION PARA DETERMINAR LA DETERMINANTEDE UNA MATRIZ nXn
+Conceptos:
+El determinante de una matriz es un valor escalar que se calcula a partir de los elementos de una matriz cuadrada; es decir, igual numero de filas y coumnas. Se representa comunmente como: |A| lo que es equivalente a det(A).
+
+Para calcular la determinanate de una matriz de 2x2, su formula es:
+det(A)= ad-bc 
 
 
 
