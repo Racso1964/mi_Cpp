@@ -26,6 +26,11 @@ int main()
     
     cout<<"El promedio de los datos es: "<<media<<endl;
 
+    // Lamar la funcion "buscarmax" y pasarle los dos argumentos que requiere:
+    // q son: una un arreglo llamado "A" y un entero llamado "n"
+    cout<<"El valor maximo del arreglo es: "<<buscarmax(A,n)<<endl;
+
+
 
   
 
@@ -53,8 +58,12 @@ int buscarmax(int A[], short int n)
 
     valormax = A[0];// Inucializa el puntero del vector "A" en el elemento q ocupa la posicion cero
     for (i=0; i<n; i++)
-        if (valormax<A[i]) //Si lo que hay en en la posicion A[0] es menor que lo que hay en A[i] entonces actualizamos el valor maimo
+        if (valormax<A[i]) //Si lo que hay en en la posicion A[0] es menor que lo que hay en A[i] entonces actualizamos el valor maximo
             valormax=A[i]; // Actualzacion del valor maximo
     return valormax; // AL finalizar el for se retorna el contenido en valormax
     
 }
+
+//La funcion "buscamax" recibe un vector como argumento y tambie recibe un numero entero "n" y va a devolver un valor entero que representa el valor maximo de ese arreglo.
+//Una vez que se invoqueesafuncion en "main" como ya sesabe que la funcion deveolvera un valor, entonces se puede declarar otra variable para almacenar dicho valor.
+//En caso que el valor devuelto por la funcion no se va a utilizar en un futuro y solo se requiere presenar por consola su valor, se procede como ejemplo: cout<<"El valor maximo del arreglo es: "<<buscamax(A,n);
